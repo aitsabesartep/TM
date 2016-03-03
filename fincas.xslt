@@ -169,8 +169,8 @@
                   </ul>
                 </div>
               </div>
-              <div id="preu" class="col-xs-2 col-sm-2 col-md-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
-                <p>Preu</p>
+              <div id="preu" class="col-xs-3 col-sm-3 col-md-3">
+                 <p id="text_preu">Preu</p>
               </div>
         </div>
         </div>

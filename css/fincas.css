@@ -49,6 +49,15 @@ img#img_finca{
 div#preu{
   background-color: red;
   margin-top: 15px;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p#text_preu{
+  font-size: 30px;
+  vertical-align: middle;
+  margin-bottom: 0px;
 }
 
 hr{
