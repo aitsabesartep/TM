@@ -1,12 +1,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
-
-<html lang="es-ES" >
+<html lang="es-ES" ><!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"></meta>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <meta charset="utf-8"></meta>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <meta name="description" content=""></meta>
     <meta name="author" content=""></meta>
@@ -63,6 +62,7 @@
   </nav>
 
     <div class="container">
+
             <!-- Page Header -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -72,25 +72,22 @@
                           <span class="glyphicon glyphicon-filter"></span>  Filtros
                       </button>
                     </div>
-                  </div>
+                </div>
                 <div id="target" class="panel-body">
-                  <form class="form-horizontal form-pricing" role="form">
 
+                    <form class="form-horizontal form-pricing" role="form">
 
-                    //Slider
+                    //Filtres
 
-                  </form>
+                    </form>
                 </div>
                </div>
             </div>
             <!-- /.row -->
 
             <!-- Projects Row -->
-              <div>
-                <xsl:apply-templates select="fincas/finca">
-                  <xsl:with-param name="pos" select="1"/>
-                </xsl:apply-templates>
-              </div>
+            <xsl:apply-templates select="fincas/finca"/>
+            
             <!-- /.row -->
 
             <hr></hr>
@@ -123,7 +120,8 @@
                     </ul>
                 </div>
             </div>
-  </div>
+
+        </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -131,88 +129,43 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 
-
 </body>
 </html>
 </xsl:template>
 
   <xsl:template match="finca">
-    <xsl:param name="pos"/>
-    <xsl:choose>
-      <xsl:when test="$pos=1">
-        <div class="row">
-          <div class="col-md-6">
-            <div id="cuadro_finca" class="container-fluid">
-              <a href="#">
-                <img id="img_finca" class="img-responsive">
-                  <xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute>
-                </img>
-              </a>
-              <div id="descripcio">
-                <h3>
-                  <a href="#"><xsl:value-of select="nombre"/></a>
-                </h3>
-                <h5><xsl:value-of select="poblacion"/></h5>
-                <hr></hr>
-                <div id="info">
-                  <div id="subinfo">
-                    <ul id="caracteristiques">
-                      <li>Característica1:</li>
-                      <li>Característica2:</li>
-                      <li>Característica3:</li>
-                    </ul>
-                  </div>
-                  <div id="subinfo1">
-                    <ul id="caracteristiques">
-                      <li>Característica1:</li>
-                      <li>Característica2:</li>
-                      <li>Característica3:</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <xsl:apply-templates select="following-sibling::finca">
-              <xsl:with-param name="pos" select="2"/>
-            </xsl:apply-templates>
-        </div>
-      </xsl:when>
-      <xsl:when test="$pos=2">
+    <div class="row">
+      <div id="cuadro_finca" class="col-md-12">
         <div class="col-md-6">
-          <div id="cuadro_finca" class="container-fluid">
-              <a href="#">
-                <img id="img_finca" class="img-responsive">
-                  <xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute>
-                </img>
-              </a>
-            <div id="descripcio">
-              <h3>
-                <a href="#"><xsl:value-of select="nombre"/></a>
-              </h3>
-              <h5><xsl:value-of select="poblacion"/></h5>
-              <hr></hr>
-              <div id="info">
-                <div id="subinfo">
-                  <ul id="caracteristiques">
-                    <li>Característica1:</li>
-                    <li>Característica2:</li>
-                    <li>Característica3:</li>
-                  </ul>
-                </div>
-                <div id="subinfo1">
-                  <ul id="caracteristiques">
-                    <li>Característica1:</li>
-                    <li>Característica2:</li>
-                    <li>Característica3:</li>
-                  </ul>
-                </div>
-              </div>
+          <a href="#">
+            <img id="img_finca" class="img-responsive" src="img/img_fincas/palacio/img0.jpg" alt=""></img>
+          </a>
+        </div>
+        <div id="descripcio" class="col-md-6">
+          <h3>
+            <a href="#"><xsl:value-of select="nombre"/></a>
+          </h3>
+          <h5><xsl:value-of select="poblacion"/></h5>
+          <hr></hr>
+          <div id="info">
+            <div id="subinfo">
+              <ul id="caracteristiques">
+                <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
+                <li><p>Casa: <xsl:value-of select="metros_casa"/> m<sup>2</sup></p></li>
+                <li><p>Terreno: <xsl:value-of select="metros_terreno"/> m<sup>2</sup></p></li>
+                <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
+              </ul>
             </div>
           </div>
         </div>
-      </xsl:when>
-    </xsl:choose>
+      </div>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="servicios">
+    <xsl:for-each select="*">
+        <li>hoa</li>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>

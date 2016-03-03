@@ -53,9 +53,6 @@
       <cocina>
         <tostadora>1</tostadora>
         <horno>1</horno>
-        <lavavajillas></lavavajillas>
-        <cafetera></cafetera>
-        <microondas></microondas>
         <nevera></nevera>
         <congelador></congelador>
       </cocina>
