@@ -29,8 +29,11 @@ ul#caracteristiques{
   list-style-type: none;
 }
 
+div#contingut{
+}
+
 div#info{
-  width: 100%;
+  margin-top: 15px;
 }
 div#subinfo{
   width: 60%;
@@ -42,6 +45,10 @@ div#subinfo1{
 }
 img#img_finca{
   border-radius: 10px;
+}
+div#preu{
+  background-color: red;
+  margin-top: 15px;
 }
 
 hr{

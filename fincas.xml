@@ -6,7 +6,7 @@
     <codi>1</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc>1</finc>
+      <finc></finc>
       <casa>1</casa>
       <apartamento></apartamento>
     </tipo>
@@ -43,13 +43,9 @@
     <num_habitaciones>8</num_habitaciones>
     <num_banyos>8</num_banyos>
     <servicios>
-      <internet>1</internet>
-      <piscina>1</piscina>
-      <limpieza>1</limpieza>
-      <climatizacion>1</climatizacion>
-      <television>1</television>
-      <lavadora>1</lavadora>
-      <barbacoa>1</barbacoa>
+      <piscina>Piscina</piscina>
+      <lavadora>Lavadora</lavadora>
+      <barbacoa>Barbacoa</barbacoa>
       <cocina>
         <tostadora>1</tostadora>
         <horno>1</horno>
@@ -131,22 +127,9 @@
     <num_habitaciones>3</num_habitaciones>
     <num_banyos>2</num_banyos>
     <servicios>
-      <internet>1</internet>
-      <piscina>1</piscina>
-      <limpieza></limpieza>
-      <climatizacion>1</climatizacion>
-      <television>1</television>
-      <lavadora>1</lavadora>
-      <barbacoa>1</barbacoa>
-      <cocina>
-        <tostadora>1</tostadora>
-        <horno>1</horno>
-        <lavavajillas></lavavajillas>
-        <cafetera></cafetera>
-        <microondas>1</microondas>
-        <nevera></nevera>
-        <congelador></congelador>
-      </cocina>
+      <internet>Internet</internet>
+      <piscina>Piscina</piscina>
+      <television>TV por cable</television>
     </servicios>
     <hora>
       <entrada>14:00</entrada>

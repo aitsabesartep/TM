@@ -136,27 +136,43 @@
   <xsl:template match="finca">
     <div class="row">
       <div id="cuadro_finca" class="col-md-12">
-        <div class="col-md-6">
+        <div class="col-md-12 col-lg-6">
           <a href="#">
             <img id="img_finca" class="img-responsive" src="img/img_fincas/palacio/img0.jpg" alt=""></img>
           </a>
         </div>
-        <div id="descripcio" class="col-md-6">
-          <h3>
-            <a href="#"><xsl:value-of select="nombre"/></a>
-          </h3>
-          <h5><xsl:value-of select="poblacion"/></h5>
-          <hr></hr>
-          <div id="info">
-            <div id="subinfo">
-              <ul id="caracteristiques">
-                <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
-                <li><p>Casa: <xsl:value-of select="metros_casa"/> m<sup>2</sup></p></li>
-                <li><p>Terreno: <xsl:value-of select="metros_terreno"/> m<sup>2</sup></p></li>
-                <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
-              </ul>
+        <div id="descripcio" class="col-md-12 col-lg-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                    <a href="#"><xsl:value-of select="nombre"/></a>
+                    </h3>
+                    <h5><xsl:value-of select="poblacion"/></h5>
+                    <hr></hr>
+                </div>
             </div>
-          </div>
+          <div id="contingut" class="row">
+              <div id="info" class="col-xs-8 col-sm-8 col-md-8">
+                <div id="subinfo">
+                  <ul id="caracteristiques">
+                    <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
+                    <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
+                    <li><p>Casa: <xsl:value-of select="metros_casa"/> m<sup>2</sup></p></li>
+                    <xsl:choose>
+                        <xsl:when test="tipo/finc=1">
+                            <li><p>Terreno: <xsl:value-of select="metros_terreno"/> m<sup>2</sup></p></li>
+                        </xsl:when>
+                    </xsl:choose>
+                    <li><p><xsl:value-of select="servicios/*[1]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
+                    <li><p><xsl:value-of select="servicios/*[2]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
+                    <li><p><xsl:value-of select="servicios/*[3]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="preu" class="col-xs-2 col-sm-2 col-md-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
+                <p>Preu</p>
+              </div>
+        </div>
         </div>
       </div>
     </div>
