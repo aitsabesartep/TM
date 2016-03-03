@@ -1,0 +1,56 @@
+/******* PART FINQUES *******/
+
+
+button#filtro{
+  border-color: black;
+  background: rgba(255, 166, 0, 0.0)!important;
+}
+
+button#filtro{
+  border-color: black;
+  background: rgba(255, 166, 0, 0.0)!important;
+  font-size: 15px;
+}
+
+div#target{
+  display: none;
+}
+
+div#cuadro_finca{
+  margin-top: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: orange;
+  border-radius: 15px;
+}
+
+ul#caracteristiques{
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+div#info{
+  width: 100%;
+}
+div#subinfo{
+  width: 60%;
+  display: inline-block;
+}
+div#subinfo1{
+  width: 39%;
+  display: inline-block;
+}
+img#img_finca{
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+hr{
+  color: #337AB7;
+  background-color: #337AB7;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+
+/********* SLIDER ********/

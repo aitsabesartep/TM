@@ -1,0 +1,46 @@
+/*Menu*/
+
+.navbar-color{
+	background-color: orange;
+	border: inherit;
+  height: 9%;
+}
+
+.navbar-color-mobile{
+	background-color: orange;
+	border: inherit;
+	margin-top: 0px;
+
+}
+
+a#item_text:hover{
+  background-color: #337AB7;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+a#item_text{
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 25px;
+}
+
+a#item_fincas{
+	color: white;
+	font-weight: bold;*/
+	font-size: 30px;
+}
+
+li#menu_active{
+	background-color: #337AB7;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+a, a:active, a:focus, button{
+outline: none;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
