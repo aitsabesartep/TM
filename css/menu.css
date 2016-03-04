@@ -3,13 +3,11 @@
 .navbar-color{
 	background-color: orange;
 	border: inherit;
-  height: 9%;
 }
 
 .navbar-color-mobile{
 	background-color: orange;
 	border: inherit;
-	margin-top: 0px;
 
 }
 

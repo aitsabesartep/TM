@@ -65,7 +65,7 @@
 
             <!-- Page Header -->
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
                   <div class="panel-heading">
                     <div class="pll-right">
                       <button id="filtro" type="button" class="btn btn-default btn-xs btn-filter" data-target="#bs-example-navbar-collapse-1">
@@ -94,7 +94,7 @@
 
             <!-- Pagination -->
             <div class="row text-center">
-                <div class="col-lg-12">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
                     <ul class="pagination">
                         <li>
                             <a href="#">Prev</a>
@@ -135,14 +135,16 @@
 
   <xsl:template match="finca">
     <div class="row">
-      <div id="cuadro_finca" class="col-md-12">
+      <div id="cuadro_finca" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
         <div class="col-md-12 col-lg-6">
           <a href="#">
-            <img id="img_finca" class="img-responsive" src="img/img_fincas/palacio/img0.jpg" alt=""></img>
+            <img id="img_finca" class="img-responsive">
+                  <xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute>
+            </img>
           </a>
         </div>
         <div id="descripcio" class="col-md-12 col-lg-6">
-            <div class="row">
+            <div id="rp" class="row">
                 <div class="col-md-12">
                     <h3>
                     <a href="#"><xsl:value-of select="nombre"/></a>
@@ -152,7 +154,7 @@
                 </div>
             </div>
           <div id="contingut" class="row">
-              <div id="info" class="col-xs-8 col-sm-8 col-md-8">
+              <div id="info" class="col-xs-12 col-sm-8 col-md-9 col-lg-7">
                 <div id="subinfo">
                   <ul id="caracteristiques">
                     <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
@@ -169,19 +171,13 @@
                   </ul>
                 </div>
               </div>
-              <div id="preu" class="col-xs-3 col-sm-3 col-md-3">
-                 <p id="text_preu">Preu</p>
+              <div id="preu" class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
+                 <h3 id="preui" class="btn btn-success"><span id="desde">desde</span>&#160;<xsl:value-of select="precio/enero"/>&#160;€/noche</h3>
               </div>
         </div>
         </div>
       </div>
     </div>
-  </xsl:template>
-
-  <xsl:template match="servicios">
-    <xsl:for-each select="*">
-        <li>hoa</li>
-    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>

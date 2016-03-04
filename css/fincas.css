@@ -29,36 +29,23 @@ ul#caracteristiques{
   list-style-type: none;
 }
 
-div#contingut{
-}
-
 div#info{
   margin-top: 15px;
 }
-div#subinfo{
-  width: 60%;
-  display: inline-block;
+div#preu{
+  margin-top: 15px;
 }
-div#subinfo1{
-  width: 39%;
-  display: inline-block;
-}
+
 img#img_finca{
   border-radius: 10px;
 }
 div#preu{
-  background-color: red;
-  margin-top: 15px;
+  margin-top: 0px;
   border-radius: 10px;
   vertical-align: middle;
   text-align: center;
 }
 
-p#text_preu{
-  font-size: 30px;
-  vertical-align: middle;
-  margin-bottom: 0px;
-}
 
 hr{
   color: #337AB7;
@@ -68,4 +55,38 @@ hr{
 }
 
 
-/********* SLIDER ********/
+@media screen and (max-width: 767px) {
+  span#desde{
+    font-size: 10px;
+  }
+
+  h3#preui{
+    font-size: 15px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    span#desde{
+    font-size: 12px;
+  }
+
+  h3#preui{
+    font-size: 18px;
+  }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+      span#desde{
+    font-size: 12px;
+  }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+  span#desde{
+  font-size: 12px;
+  }
+
+  h3#preui{
+    font-size: 20px;
+  }
+}
