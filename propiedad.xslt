@@ -53,9 +53,6 @@
                         <a id="item_text" href="fincas.xml">Fincas</a>
                     </li>
                     <li>
-                        <a id="item_text" href="fincas_mapa.xml">Mapa</a>
-                    </li>
-                    <li>
                         <a id="item_text" href="#">Contacto</a>
                     </li>
                 </ul>
@@ -128,6 +125,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 

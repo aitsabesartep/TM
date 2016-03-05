@@ -31,3 +31,8 @@ div#element{
   min-width: 100px;
   max-width: 140px;
 }
+
+.ui-datepicker-month{
+  background-color: orange;
+  border-color: white;
+}

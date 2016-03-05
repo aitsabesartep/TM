@@ -1,0 +1,38 @@
+div#contingut{
+	margin-top: 50px;
+	width: 90%;
+}
+
+div#map{
+	height: 90%;
+	width: 100%;
+	border-color: #337AB7;
+	border-style: solid;
+    border-width: 5px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border-left: inherit;
+}
+
+div#lg{
+	margin: inherit;
+	padding: inherit;
+}
+
+div#cases{
+	height: 90%;
+	margin: inherit;
+	background-color: orange;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background: rgba(255, 166, 0, 0.6)!important;
+	border-color: #337AB7;
+	border-style: solid;
+    border-width: 5px;
+}
+
+div#r{
+	margin-right: inherit;
+	margin-left: inherit;
+	margin-top: 15px;
+}
