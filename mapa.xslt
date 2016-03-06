@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
-<html lang="es-ES" ><!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<html id="ht" lang="es-ES" ><!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -17,13 +17,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
 
     <!-- Custom CSS -->
-    <link href="css/full.css" rel="stylesheet"></link>
     <link href="css/menu.css" rel="stylesheet"></link>
     <link href="css/mapa.css" rel="stylesheet"></link>
 
 </head>
 
-<body>
+<body id="bd">
     <!-- Navigation -->
     <nav id="nav1" class="navbar-color navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -58,15 +57,8 @@
   </nav>
 
     <div id="contingut" class="container">
-        <div id="r" class="row">
-            <div id="cases" class="col-lg-2">
-                <h2>Finques</h2>
-            </div>
-            <div id="lg" class="col-lg-10">
-                <div id="map">
-                    <xsl:apply-templates select="fincas"/>
-                </div>
-            </div>
+        <div id="map">
+            <xsl:apply-templates select="fincas"/>
         </div>
     </div>
 
@@ -94,11 +86,16 @@
             });
         }
 
-        function addmarker(latilongi) {
+        function addmarker(latilongi, info) {
             var marker = new google.maps.Marker({
                 position: latilongi,
-                title: 'new marker',
+                title: 'titol',
+                clickable: true,
                 map: map
+            });
+            marker.info = info;
+            google.maps.event.addListener(marker, 'click', function() {
+              marker.info.open(map, marker);
             });
         }
 
@@ -113,7 +110,35 @@
         var lat = <xsl:value-of select="coordenadas/latitud"/>
         var long = <xsl:value-of select="coordenadas/longitud"/>
         var myLatlng = new google.maps.LatLng(lat,long);
-        addmarker(myLatlng);
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1>'+
+            '<h4 id="firstHeading" class="firstHeading"><xsl:value-of select="poblacion"/></h4>'+
+            '<div id="bodyContent">'+
+            '<p><b>Nom Finca</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&amp;ampoldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+
+        var info = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        addmarker(myLatlng,info);
+
     </script>
   </xsl:template>
 
