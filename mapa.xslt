@@ -64,6 +64,7 @@
             </div>
             <div id="lg" class="col-lg-10">
                 <div id="map">
+                    <xsl:apply-templates select="fincas"/>
                 </div>
             </div>
         </div>
@@ -74,28 +75,45 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp;callback=initMap"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp"></script>
-    <script type="text/javascript">
-        google.maps.event.addDomListener(window, "load", function() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: new google.maps.LatLng(39.6130537, 2.8864253),
-                zoom: 10,
-            });
-        });
-    </script>
+    
 
 </body>
 </html>
 </xsl:template>
 
+
+    <xsl:template match="fincas">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp"></script>
+    <script type="text/javascript">
+        var map;
+
+        function initMap(){
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: new google.maps.LatLng(39.6130537, 2.8864253),
+                zoom: 9,
+            });
+        }
+
+        function addmarker(latilongi) {
+            var marker = new google.maps.Marker({
+                position: latilongi,
+                title: 'new marker',
+                map: map
+            });
+        }
+
+        initMap();
+    </script>
+    <xsl:apply-templates select="finca"/>
+    </xsl:template>
+
+
   <xsl:template match="finca">
     <script>
-        <!-- var myLatlng = new google.maps.LatLng(39.6130537,2.8864253);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Hello World!"
-        });
-        marker.setMap(map); -->
+        var lat = <xsl:value-of select="coordenadas/latitud"/>
+        var long = <xsl:value-of select="coordenadas/longitud"/>
+        var myLatlng = new google.maps.LatLng(lat,long);
+        addmarker(myLatlng);
     </script>
   </xsl:template>
 

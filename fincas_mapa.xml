@@ -34,8 +34,8 @@
     <descripcion>Finca situada en las afueras...</descripcion>
     <poblacion>Petra</poblacion>
     <coordenadas>
-      <longitud>13.1</longitud>
-      <latitud>14.2</latitud>
+      <longitud>2.8864253</longitud>
+      <latitud>39.6130537</latitud>
     </coordenadas>
     <capacidad_personas>12</capacidad_personas>
     <metros_casa>300</metros_casa>
@@ -118,8 +118,8 @@
     <descripcion>Posessión situada en las afueras de Sineu</descripcion>
     <poblacion>Sineu</poblacion>
     <coordenadas>
-      <longitud>13.1</longitud>
-      <latitud>14.2</latitud>
+      <longitud>3.1139447</longitud>
+      <latitud>39.617201</latitud>
     </coordenadas>
     <capacidad_personas>6</capacidad_personas>
     <metros_casa>150</metros_casa>
