@@ -119,13 +119,13 @@
         var long = <xsl:value-of select="coordenadas/longitud"/>
         var myLatlng = new google.maps.LatLng(lat,long);
 
-        var contentString = '<div id="content">'+
+        var contentString = '<div id="content" style="width:100%; max-width:400px;">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1>'+
             '<h4 id="firstHeading" class="firstHeading"><xsl:value-of select="poblacion"/></h4>'+
             '<div id="bodyContent">'+
-            '<img class="img-responsive" src="img/fondo1.jpg" style="height:100%;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img>'+
+            '<img class="img-responsive" src="img/fondo1.jpg" style="width:100%; max-width:400px;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img>'+
             '<hr></hr>'+
             '<p><xsl:value-of select="descripcion"/></p>'+
             '</div>'+

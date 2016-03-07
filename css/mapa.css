@@ -22,3 +22,15 @@ div#map{
     border-width: 5px;
 	border-radius: 15px;
 }
+
+@media (max-width: 800px) {
+	div#contingut{
+		margin-top: 50px;
+		width: 100%;
+	}
+
+}
+
+div#content{
+	width: 500px;
+}
