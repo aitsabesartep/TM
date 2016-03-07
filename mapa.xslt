@@ -122,10 +122,10 @@
         var contentString = '<div id="content" style="width:100%; max-width:400px;">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1>'+
+            '<a href="#"><h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1></a>'+
             '<h4 id="firstHeading" class="firstHeading"><xsl:value-of select="poblacion"/></h4>'+
             '<div id="bodyContent">'+
-            '<img class="img-responsive" src="img/fondo1.jpg" style="width:100%; max-width:400px;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img>'+
+            '<a href="#"><img class="img-responsive" src="img/fondo1.jpg" style="width:100%; max-width:400px;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img></a>'+
             '<hr></hr>'+
             '<p><xsl:value-of select="descripcion"/></p>'+
             '</div>'+
