@@ -15,8 +15,32 @@ div#contingut{
 }
 
 div#map{
+	height: 90%;
 	width: 100%;
+<<<<<<< HEAD
 	height: 100%;
+=======
+	border-color: #337AB7;
+	border-style: solid;
+    border-width: 5px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border-left: inherit;
+}
+
+div#lg{
+	margin: inherit;
+	padding: inherit;
+}
+
+div#cases{
+	height: 90%;
+	margin: inherit;
+	background-color: orange;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background: rgba(255, 166, 0, 0.6)!important;
+>>>>>>> parent of 7f516c4... V 6.5 Ara també va bé a mozilla
 	border-color: #337AB7;
 	border-style: solid;
     border-width: 5px;
