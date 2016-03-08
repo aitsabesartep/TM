@@ -60,7 +60,7 @@
             <!-- /.navbar-collapse -->
         </div>
   </nav>
-
+<section>
     <div class="container">
 
             <!-- Page Header -->
@@ -128,7 +128,7 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
-
+</section>
 </body>
 </html>
 </xsl:template>
