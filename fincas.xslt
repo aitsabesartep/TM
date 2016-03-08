@@ -64,8 +64,6 @@
         </div>
   </nav>
 
-  <section>
-
     <div class="container">
 
             <!-- Page Header -->
@@ -127,7 +125,6 @@
             </div>
 
         </div>
-        </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
