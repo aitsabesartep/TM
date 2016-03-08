@@ -27,13 +27,12 @@ a#item_text:hover{
 
 a#item_text{
 	color: white;
-	/*font-weight: bold;*/
 	font-size: 25px;
 }
 
 a#item_fincas{
 	color: white;
-	font-weight: bold;*/
+	font-weight: bold;
 	font-size: 30px;
 }
 
