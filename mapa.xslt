@@ -42,10 +42,10 @@
                         <a id="item_text" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a id="item_text" href="fincas.xml">Fincas</a>
+                        <a id="item_text" href="fincas.php">Fincas</a>
                     </li>
                     <li id="menu_active">
-                        <a id="item_text" href="fincas_mapa.xml">Mapa</a>
+                        <a id="item_text" href="mapa.php">Mapa</a>
                     </li>
                     <li>
                         <a id="item_text" href="#">Contacto</a>
