@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
-<html lang="es-ES" ><!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<html lang="es-ES" >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -9,24 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <meta name="description" content=""></meta>
     <meta name="author" content=""></meta>
-    <link rel="icon" href="img/logo.png"></link>
 
     <title>Fincas En Mallorca</title>
 
-    <!-- Bootstrap Core CSS -->
+    <link rel="icon" href="img/logo.png"></link>
     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
 
-    <!-- Custom CSS -->
     <link href="css/full.css" rel="stylesheet"></link>
     <link href="css/menu.css" rel="stylesheet"></link>
     <link href="css/fincas.css" rel="stylesheet"></link>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -62,17 +53,15 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-  </nav>
+    </nav>
 
     <div class="container">
-
-            <!-- Page Header -->
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                  <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
+                <div class="panel-heading">
                     <div class="pll-right">
-                      <button id="filtro" type="button" class="btn btn-default btn-xs btn-filter" data-target="#bs-example-navbar-collapse-1">
-                          <span class="glyphicon glyphicon-filter"></span>  Filtros
+                        <button id="filtro" type="button" class="btn btn-default btn-xs btn-filter" data-target="#bs-example-navbar-collapse-1">
+                        <span class="glyphicon glyphicon-filter"></span>  Filtros
                       </button>
                     </div>
                 </div>
@@ -84,51 +73,50 @@
 
                     </form>
                 </div>
-               </div>
             </div>
-            <!-- /.row -->
-
-            <!-- Projects Row -->
-            <xsl:apply-templates select="fincas/finca"/>
-            
-            <!-- /.row -->
-
-            <hr></hr>
-
-            <!-- Pagination -->
-            <div class="row text-center">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#">Prev</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
-                        </li>
-                        <li>
-                            <a href="#">Next</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
 
-    <!-- jQuery -->
+        <section>
+            <xsl:apply-templates select="fincas/finca"/>
+        </section>
+
+        <hr></hr>
+
+            <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">Prev</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="peu">
+        <p id="textPeu" >Copyright 2016 All rights reserved.</p>
+    </footer>
+
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 
 </body>

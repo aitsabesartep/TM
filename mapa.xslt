@@ -54,13 +54,14 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-  </nav>
-
-    <div id="contingut" class="container">
-        <div id="map">
-            <xsl:apply-templates select="fincas"/>
+    </nav>
+    <section>
+        <div id="contingut" class="container">
+            <div id="map">
+                <xsl:apply-templates select="fincas"/>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

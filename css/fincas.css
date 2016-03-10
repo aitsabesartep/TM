@@ -1,5 +1,13 @@
 /******* PART FINQUES *******/
 
+footer#peu{
+  background: rgba(255, 166, 0, 0.4)!important;
+  text-align: center;
+}
+
+p#textPeu{
+  color: #337AB7;
+}
 
 button#filtro{
   border-color: black;
