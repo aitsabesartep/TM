@@ -1,0 +1,22 @@
+div#tot{
+	width: 90%;
+}
+div#main_r{
+}
+
+div#contingut{
+	min-height: 700px;
+}
+
+div#contingut_dreta{
+	background-color: pink;
+	min-height: 700px;
+}
+
+div#slider{
+	padding: inherit;
+	margin-bottom: 7px;
+}
+
+img#i_petita{
+}

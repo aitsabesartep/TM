@@ -17,6 +17,7 @@
 
     <link href="css/full.css" rel="stylesheet"></link>
     <link href="css/menu.css" rel="stylesheet"></link>
+    <link href="css/peu.css" rel="stylesheet"></link>
     <link href="css/fincas.css" rel="stylesheet"></link>
 
 </head>

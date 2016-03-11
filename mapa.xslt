@@ -18,6 +18,7 @@
 
     <!-- Custom CSS -->
     <link href="css/menu.css" rel="stylesheet"></link>
+    <link href="css/peu.css" rel="stylesheet"></link>
     <link href="css/mapa.css" rel="stylesheet"></link>
 
 </head>
@@ -62,6 +63,10 @@
             </div>
         </div>
     </section>
+
+    <footer id="peu">
+        <p id="textPeu" >Copyright 2016 All rights reserved.</p>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
