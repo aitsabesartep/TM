@@ -3,12 +3,15 @@ div#main_r{
 	padding: inherit;
 }
 
-div#contingut{
+div#contignut_dreta_in{
+	min-height: 100px;
 }
 
 div#contingut_dreta{
-	background-color: pink;
-	min-height: 400px;
+	margin: auto;
+	background: rgba(255, 166, 0, 0.2)!important;
+	border-color: rgba(51, 122, 183, 0.8)!important;
+	border-radius: 10px;
 	margin-top: 0px;
 }
 
