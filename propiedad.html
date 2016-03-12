@@ -59,45 +59,45 @@
     <div id="tot" class="container">
         <div id="main_r" class="row">
             <section>
-                <div id="contingut" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <div id="contingut" class="col-xs-12 col-sm-12 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
                     <section class="slider">
                         <div id="slider" class="flexslider">
                           <ul class="slides">
                             <li>
-                                <img src="img/img_fincas/palacio/img0.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img0.jpg" />
+                            </li>
+                                <li>
+                                <img id="i_gran" src="img/img_fincas/palacio/img1.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img1.jpg" />
-                                </li>
-                                <li>
-                                <img src="img/img_fincas/palacio/img2.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img2.jpg" />
                                 </li>
                                 <li>
                                 <img src="img/img_fincas/palacio/img3.jpg" />
                             </li>
                             <li>
-                                <img src="img/img_fincas/palacio/img4.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img4.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img5.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img5.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img6.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img6.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img7.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img7.jpg" />
                             </li>
                             <li>
-                                <img src="img/img_fincas/palacio/img8.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img8.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img9.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img9.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img10.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img10.jpg" />
                                 </li>
                                 <li>
-                                <img src="img/img_fincas/palacio/img11.jpg" />
+                                <img id="i_gran" src="img/img_fincas/palacio/img11.jpg" />
                             </li>
                           </ul>
                         </div>
@@ -105,7 +105,7 @@
                           <ul class="slides">
                             <li>
                                 <img src="img/img_fincas/palacio/img0.jpg" />
-                                </li>
+                            </li>
                                 <li>
                                 <img src="img/img_fincas/palacio/img1.jpg" />
                                 </li>
@@ -145,8 +145,10 @@
                 </div>
             </section>
             <section>
-                <div id="contingut_dreta" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div id="contingut_dreta">
+                        
+                    </div>
                 </div>
             </section>
         </div>
@@ -160,16 +162,19 @@
     <script src="js/slider/jquery.flexslider-min.js"></script>
 
       <script type="text/javascript">
+
         $(function(){
           SyntaxHighlighter.all();
         });
         $(window).load(function(){
+            var x = screen.availWidth;
+            item = 0+(x/10);
           $('#carousel').flexslider({
             animation: "slide",
             controlNav: false,
             animationLoop: false,
             slideshow: false,
-            itemWidth: 210,
+            itemWidth: item,
             itemMargin: 5,
             asNavFor: '#slider'
           });

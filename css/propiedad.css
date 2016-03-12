@@ -1,22 +1,21 @@
-div#tot{
-	width: 90%;
-}
+
 div#main_r{
+	padding: inherit;
 }
 
 div#contingut{
-	min-height: 700px;
 }
 
 div#contingut_dreta{
 	background-color: pink;
-	min-height: 700px;
+	min-height: 400px;
+	margin-top: 0px;
 }
 
 div#slider{
 	padding: inherit;
-	margin-bottom: 7px;
+	margin-bottom: 3px;
 }
-
-img#i_petita{
+div#carousel{
+	margin-bottom: 10px;
 }
