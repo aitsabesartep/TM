@@ -117,7 +117,7 @@
                             </li>
                             <li>
                                 <img src="img/img_fincas/palacio/img4.jpg" />
-                                </li>
+                            </li>
                                 <li>
                                 <img src="img/img_fincas/palacio/img5.jpg" />
                                 </li>
@@ -147,13 +147,32 @@
             <section>
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div id="contingut_dreta" class="row">
-                        <div id="contignut_dreta_in" class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
-                            <h2>Nom finca</h2>
+                        <div id="contignut_dreta_in" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 id="titol">Nom finca</h2>
                             <h4>Ubicacio</h4>
+                            <hr></hr>
                         </div>
-                        <div id="contignut_dreta_in" class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
-                            <h2>Nom finca</h2>
-                            <h4>Ubicacio</h4>
+                        <div id="contignut_dreta_in" class="col-xs-7 col-sm-7 col-md-12 col-lg-12">
+                          <ul id="lista">
+                            <li><p>Capacidad: 12 <span class="glyphicon glyphicon-user"></span></p></p></li>
+                            <li><p>Nº Baños: 3</p></li>
+                            <li><p>Casa: 400 m<sup>2</sup></p></li>
+                            <li><p>Terreno: 1500m<sup>2</sup></p></li>
+                          </ul>
+                        </div>
+                        <div id="contignut_dreta_in" class="col-xs-5 col-sm-5 col-md-12 col-lg-12">
+                            <ul id="lista">
+                                <li><p>Wifi <span class="glyphicon glyphicon-ok"></span></p></li>
+                                <li><p>Comida <span class="glyphicon glyphicon-ok"></span></p></li>
+                                <li><p>Baño <span class="glyphicon glyphicon-ok"></span></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="" class="row">
+                        <div id="contingut_dreta_preu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <button id="preu" class="btn btn-success">
+                                Reservar ahora
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -169,21 +188,29 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/slider/jquery.flexslider-min.js"></script>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
 
         $(function(){
           SyntaxHighlighter.all();
         });
         $(window).load(function(){
+
+            var div = 14;
+            if (screen.width < 850) {
+                div = 8;
+            }else if (screen.width < 450) {
+                div = 6;
+            }
             var x = screen.availWidth;
-            item = 0+(x/10);
+            item = 0+(x/div);
+
           $('#carousel').flexslider({
             animation: "slide",
             controlNav: false,
             animationLoop: false,
             slideshow: false,
             itemWidth: item,
-            itemMargin: 5,
+            itemMargin: 4,
             asNavFor: '#slider'
           });
 
@@ -198,7 +225,7 @@
             }
           });
         });
-      </script>
+    </script>
 
       <!-- Syntax Highlighter -->
       <script type="text/javascript" src="js/slider/shCore.js"></script>

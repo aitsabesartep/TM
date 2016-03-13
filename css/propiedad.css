@@ -3,22 +3,44 @@ div#main_r{
 	padding: inherit;
 }
 
-div#contignut_dreta_in{
-	min-height: 100px;
-}
 
 div#contingut_dreta{
 	margin: auto;
-	background: rgba(255, 166, 0, 0.2)!important;
-	border-color: rgba(51, 122, 183, 0.8)!important;
+	background: rgba(171, 171, 171, 0.3)!important;
 	border-radius: 10px;
 	margin-top: 0px;
 }
 
+div#contingut_dreta_preu{
+	margin: auto;
+	margin-top: 10px;
+}
+
 div#slider{
 	padding: inherit;
-	margin-bottom: 3px;
+	margin-bottom: 4px;
+	border-width: 2px;
 }
 div#carousel{
 	margin-bottom: 10px;
+	border-width: 2px;
+}
+button#preu{
+	width: 100%;
+	font-size: 25px;
+}
+h2#titol{
+	color: #337AB7;
+}
+hr{
+  color: #337AB7;
+  background-color: #337AB7;
+  height: 2px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+ul#lista{
+	padding: 0px;
+	list-style-type: none;
 }
