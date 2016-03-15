@@ -12,13 +12,12 @@
 
     <link rel="icon" href="img/logo.png"></link>
     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
-
     <link href="css/full.css" rel="stylesheet"></link>
     <link href="css/menu.css" rel="stylesheet"></link>
     <link href="css/peu.css" rel="stylesheet"></link>
     <link href="css/propiedad.css" rel="stylesheet"></link>
-
-    <link rel="stylesheet" href="css/slider/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/slider/flexslider.css" type="text/css" media="screen"></link>
+    <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -162,7 +161,7 @@
                         </div>
                         <div id="contignut_dreta_in" class="col-xs-5 col-sm-5 col-md-12 col-lg-12">
                             <ul id="lista">
-                                <li><p><span><img src="img/icon/wifi.svg" style="max-width: 20px;"></span> Wifi</p></li>
+                                <li><p><img src="img/icon/wifi.svg" style="max-width: 18px;"> Wifi</p></li>
                                 <li><p>Comida <span class="glyphicon glyphicon-ok"></span></p></li>
                                 <li><p>Baño <span class="glyphicon glyphicon-ok"></span></p></li>
                             </ul>
@@ -173,6 +172,14 @@
                             <button id="preu" class="btn btn-success">
                                 Reservar ahora
                             </button>
+                        </div>
+                    </div>
+                    <div id="" class="row">
+                        <div id="contingut_dreta_preu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id ="estrelles">
+                                <h4 id="val">Valoración usuarios</h4>
+                                <input id="input-id" value="2">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -226,11 +233,24 @@
           });
         });
     </script>
-
       <!-- Syntax Highlighter -->
       <script type="text/javascript" src="js/slider/shCore.js"></script>
       <script type="text/javascript" src="js/slider/shBrushXml.js"></script>
       <script type="text/javascript" src="js/slider/shBrushJScript.js"></script>
+      <script type="text/javascript" src="js/star-rating.js"></script>
+
+      <script type="text/javascript">
+          $("#input-id").rating({
+            min:0,
+            max:5,
+            step:0.5,
+            size:'sm', 
+            stars:5,
+            readonly: true,
+            showClear: false,
+            showCaption: false
+        });
+      </script>
 
 </body>
 </html>

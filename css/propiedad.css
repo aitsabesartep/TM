@@ -32,6 +32,18 @@ button#preu{
 h2#titol{
 	color: #337AB7;
 }
+
+h4#val{
+	color: #337AB7;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+div#estrelles{
+	background: rgba(171, 171, 171, 0.3)!important;
+	border-radius: 10px;
+	padding: 5px;
+}
+
 hr{
   color: #337AB7;
   background-color: #337AB7;
