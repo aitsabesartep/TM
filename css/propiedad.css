@@ -36,6 +36,8 @@ h2#titol{
 h4#val{
 	color: #337AB7;
 	margin: 0px;
+	margin-left: 5px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
 div#estrelles{
@@ -55,4 +57,9 @@ hr{
 ul#lista{
 	padding: 0px;
 	list-style-type: none;
+}
+
+div#descripcio{
+	margin-top: 10px;
+	height: 100px;
 }
