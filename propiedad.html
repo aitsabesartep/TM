@@ -19,6 +19,8 @@
     <link href="css/propiedad.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="css/slider/flexslider.css" type="text/css" media="screen"></link>
     <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/range/daterangepicker.css" />
+
 
 </head>
 
@@ -284,7 +286,9 @@
             <div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <div id="datepicker"></div>
+                        <div id="content">
+                            <input id="date-range12" size="40" value=""/>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
                         <div style="background-color: red; height: 30px; margin-top: 20px;"> ffdsfsd</div>
@@ -424,33 +428,29 @@
         }
     </script>
 
-    <script src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript">
-
-            var x = 3;
-            if(screen.width > 600){
-                x = 2;
-            }else{
-                x = 1;
-            }
-            var date1 = null;
-            var date2 = null;
-            $(function() {
-                $( "#datepicker" ).datepicker({
-                    numberOfMonths: x,
-                    beforeShowDay: function(date) {
-                        return [date.getDay() < 7, date >= date1 && date <= date2 ? "dp-highlight" : ""];
-                    },
-                    onSelect: function(date) {
-                        if (date1==null) {
-                            date1 = date;
-                            $( "#datepicker" ).datepicker( "refresh" );
-                        }else{
-                            date2 = date;
-                        }
-                    },
-                });
+    <script src="js/range/moment.min.js"></script>
+    <script src="js/range/jquery.daterangepicker.js"></script>
+    <script>  
+        $(function()
+        {
+            $('#date-range12').dateRangePicker({
+                inline:true,
+                showTopbar: false,
+                container: '#content',
+                stickyMonths: true,
+                startOfWeek: 'monday',
+                language: 'es',
+                alwaysOpen:true,
+                beforeShowDay: function(t)
+                {
+                    var valid = !(t.getDate() == 10);  //disable saturday and sunday
+                    var _class = valid ? '' : 'disabled';
+                    var _tooltip = valid ? '' : '1';
+                    return [valid,_class,_tooltip];
+                }
             });
+        })
     </script>
+
 </body>
 </html>

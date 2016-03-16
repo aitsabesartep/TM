@@ -94,8 +94,10 @@ div#datepicker{
 	margin-top: 20px;
 }
 
+input#date-range12{
+	visibility: hidden;
+}
 
-.dp-highlight .ui-state-default {
-	background: red;
-	color: #FFF;
+div#content{
+	width: 100%;
 }
