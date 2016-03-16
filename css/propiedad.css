@@ -93,3 +93,9 @@ div#scr{
 div#datepicker{
 	margin-top: 20px;
 }
+
+
+.dp-highlight .ui-state-default {
+	background: red;
+	color: #FFF;
+}

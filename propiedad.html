@@ -433,11 +433,24 @@
             }else{
                 x = 1;
             }
-          $(function() {
-            $( "#datepicker" ).datepicker({
-                numberOfMonths: x
+            var date1 = null;
+            var date2 = null;
+            $(function() {
+                $( "#datepicker" ).datepicker({
+                    numberOfMonths: x,
+                    beforeShowDay: function(date) {
+                        return [date.getDay() < 7, date >= date1 && date <= date2 ? "dp-highlight" : ""];
+                    },
+                    onSelect: function(date) {
+                        if (date1==null) {
+                            date1 = date;
+                            $( "#datepicker" ).datepicker( "refresh" );
+                        }else{
+                            date2 = date;
+                        }
+                    },
+                });
             });
-          });
     </script>
 </body>
 </html>
