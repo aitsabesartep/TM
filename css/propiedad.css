@@ -89,3 +89,7 @@ div#scr{
 	overflow: scroll;
 	max-height: 500px;
 }
+
+div#datepicker{
+	margin-top: 20px;
+}

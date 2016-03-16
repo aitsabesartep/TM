@@ -12,6 +12,7 @@
 
     <link rel="icon" href="img/logo.png"></link>
     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/jquery-ui.min.css" rel="stylesheet"></link>
     <link href="css/full.css" rel="stylesheet"></link>
     <link href="css/menu.css" rel="stylesheet"></link>
     <link href="css/peu.css" rel="stylesheet"></link>
@@ -278,12 +279,22 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a data-toggle="tab">Calendario</a></li>
+                <li role="presentation" class="active"><a aria-controls="cal" role="tab" data-toggle="tab">Calendario</a>
             </ul>
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div id="datepicker"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+                        <div style="background-color: red; height: 30px; margin-top: 20px;"> ffdsfsd</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <footer id="peu">
+    <footer id="peu" style="margin-top: 30px;">
         <p id="textPeu" >Copyright 2016 All rights reserved.</p>
     </footer>
 
@@ -405,12 +416,28 @@
             document.getElementById('map').style.height = w+'px';
             initMap();
             
-            $("#loc").click(function() {
+            /*$("#loc").click(function() {
                     $('html, body').animate({
                         scrollTop: $("#settings").offset().top + w
                     }, 500);
-            });
+            });*/
         }
+    </script>
+
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+            var x = 3;
+            if(screen.width > 600){
+                x = 2;
+            }else{
+                x = 1;
+            }
+          $(function() {
+            $( "#datepicker" ).datepicker({
+                numberOfMonths: x
+            });
+          });
     </script>
 </body>
 </html>
