@@ -191,7 +191,7 @@
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Precios</a></li>
-                <li onclick="mapa()" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a></li>
+                <li id="loc" onclick="mapa()" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a></li>
                 <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Comentarios</a></li>
               </ul>
 
@@ -396,12 +396,21 @@
         }
         //Nomes carregam el mapa si es clica damunt el boto
         function mapa() {
-            var w = screen.width / 3;
+            var w = screen.width;
+            if(w > 800){
+                w = w/3;
+            }else{
+                w = w/2;
+            }
             document.getElementById('map').style.height = w+'px';
             initMap();
+            /*
+            $("#loc").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#settings").offset().top + w
+                    }, 500);
+            });*/
         }
     </script>
-
-
 </body>
 </html>
