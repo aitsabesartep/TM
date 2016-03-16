@@ -178,7 +178,7 @@
                         <div id="contingut_dreta_preu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div id ="estrelles">
                                 <h4 id="val">Valoración usuarios</h4>
-                                <input id="input-id" value="2"></input>
+                                <input id="input-id" value="4"></input>
                             </div>
                         </div>
                     </div>
@@ -237,24 +237,49 @@
                             </form>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-offset-1 col-lg-6">
+                            <h4>Comentarios</h4>
+                            <div id="scr">
                             <ul class="media-list">
                               <li class="media">
                                 <div class="media-left">
                                 </div>
-                                <div class="media-body">
+                                <div id="cm" class="media-body">
                                   <h4 class="media-heading">Juan Antonio </h4>
                                   <p>Fantastic!</p>
-                                  <input id="input-id1" value="5"></input>
-                                  <hr id="comment"></hr>
+                                  <input class="est_comment" value="5"></input>                                
+                                </div>
+                              </li>
+                              <li class="media">
+                                <div class="media-left">
+                                </div>
+                                <div id="cm" class="media-body">
+                                  <h4 class="media-heading">Miguel Angel</h4>
+                                  <p>Good expirience!</p>
+                                  <input class="est_comment" value="4"></input>                                
+                                </div>
+                              </li>
+                              <li class="media">
+                                <div class="media-left">
+                                </div>
+                                <div id="cm" class="media-body">
+                                  <h4 class="media-heading">Manolo </h4>
+                                  <p>Muy mal</p>
+                                  <input class="est_comment" value="0.5"></input>                                
                                 </div>
                               </li>
                             </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
               </div>
               
             </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a data-toggle="tab">Calendario</a></li>
+            </ul>
         </div>
     </div>
     
@@ -322,7 +347,7 @@
             showCaption: false
         });
 
-        $("#input-id1").rating({
+        $(".est_comment").rating({
             min:0,
             max:5,
             step:0.5,
@@ -371,6 +396,8 @@
         }
         //Nomes carregam el mapa si es clica damunt el boto
         function mapa() {
+            var w = screen.width / 3;
+            document.getElementById('map').style.height = w+'px';
             initMap();
         }
     </script>
