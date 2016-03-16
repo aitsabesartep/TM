@@ -443,6 +443,7 @@
                 alwaysOpen:true,
                 beforeShowDay: function(t)
                 {
+                    //Comprovar dies ja seleccionats
                     var valid = !(t.getDate() == 10);  //disable saturday and sunday
                     var _class = valid ? '' : 'disabled';
                     var _tooltip = valid ? '' : '1';
