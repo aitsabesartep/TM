@@ -103,10 +103,6 @@ div#content{
 	width: 100%;
 }
 
-.dot_out{
-	list-style-type: none;
-}
-
 .table th {
 	color: orange;
 	font-size: 15px;
@@ -114,4 +110,10 @@ div#content{
 }
 .table td {
     text-align:center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

@@ -163,18 +163,18 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
-                                                <td>150€</td>
+                                                <td><xsl:value-of select="precio/enero"/></td>
+                                                <td><xsl:value-of select="precio/febrero"/></td>
+                                                <td><xsl:value-of select="precio/marzo"/></td>
+                                                <td><xsl:value-of select="precio/abril"/></td>
+                                                <td><xsl:value-of select="precio/mayo"/></td>
+                                                <td><xsl:value-of select="precio/junio"/></td>
+                                                <td><xsl:value-of select="precio/julio"/></td>
+                                                <td><xsl:value-of select="precio/agosto"/></td>
+                                                <td><xsl:value-of select="precio/septiembre"/></td>
+                                                <td><xsl:value-of select="precio/octubre"/></td>
+                                                <td><xsl:value-of select="precio/noviembre"/></td>
+                                                <td><xsl:value-of select="precio/diciembre"/></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -265,7 +265,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div id="pagament" style="margin-top: 25px; padding: 10px; background-color: red;">
+                                <div id="pagament" style="margin-top: 25px; padding: 10px;">
                                         <form class="form-horizontal" role="form" method="post" action="">
                                             <h4>Datos reserva</h4>
                                             <div class="form-group">
