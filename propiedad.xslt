@@ -142,25 +142,43 @@
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="profile">
-                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                 <ul>
-                                    <li class="dot_out">Enero:&#160;<xsl:value-of select="precio/enero"/>€</li>
-                                    <li class="dot_out">Febrero:&#160;<xsl:value-of select="precio/febrero"/>€</li>
-                                    <li class="dot_out">Marzo:&#160;<xsl:value-of select="precio/marzo"/>€</li>
-                                    <li class="dot_out">Abril:&#160;<xsl:value-of select="precio/abril"/>€</li>
-                                    <li class="dot_out">Mayo:&#160;<xsl:value-of select="precio/mayo"/>€</li>
-                                    <li class="dot_out">Junio:&#160;<xsl:value-of select="precio/junio"/>€</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                <ul>
-                                    <li class="dot_out">Juli class="dot_out"o:&#160;<xsl:value-of select="precio/julio"/>€</li>
-                                    <li class="dot_out">Agosto:&#160;<xsl:value-of select="precio/agosto"/>€</li>
-                                    <li class="dot_out">Septiembre:&#160;<xsl:value-of select="precio/septiembre"/>€</li>
-                                    <li class="dot_out">Octubre:&#160;<xsl:value-of select="precio/octubre"/>€</li>
-                                    <li class="dot_out">Noviembre:&#160;<xsl:value-of select="precio/noviembre"/>€</li>
-                                    <li class="dot_out">Diciembre:&#160;<xsl:value-of select="precio/diciembre"/>€</li>
-                                </ul>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th align="center">Enero</th>
+                                                <th align="center">Febrero</th>
+                                                <th align="center">Marzo</th>
+                                                <th align="center">Abril</th>
+                                                <th align="center">Mayo</th>
+                                                <th align="center">Junio</th>
+                                                <th align="center">Julio</th>
+                                                <th align="center">Agosto</th>
+                                                <th align="center">Septiembre</th>
+                                                <th align="center">Octubre</th>
+                                                <th align="center">Noviembre</th>
+                                                <th align="center">Diciembre</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                                <td>150€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="messages">

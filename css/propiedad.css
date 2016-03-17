@@ -106,3 +106,12 @@ div#content{
 .dot_out{
 	list-style-type: none;
 }
+
+.table th {
+	color: orange;
+	font-size: 15px;
+    text-align:center;
+}
+.table td {
+    text-align:center;
+}
