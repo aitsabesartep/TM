@@ -68,11 +68,8 @@
         <p id="textPeu" >Copyright 2016 All rights reserved.</p>
     </footer>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp;callback=initMap"></script> -->
     
 
 </body>
@@ -81,77 +78,42 @@
 
 
     <xsl:template match="fincas">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp"></script>
-    <script src="js/markerclusterer.js"></script>
-    <script type="text/javascript">
-        var map;
-        var markers = [];
-        var markerCluster;
-
-        function initMap(){
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: new google.maps.LatLng(39.6130537, 2.8864253),
-                zoom: 9,
-            });
-        }
-
-        function addmarker(latilongi, info, last) {
-            var marker = new google.maps.Marker({
-                position: latilongi,
-                title: 'titol',
-                clickable: true,
-                map: map
-            });
-            marker.info = info;
-            google.maps.event.addListener(marker, 'click', function() {
-              marker.info.open(map, marker);
-            });
-            markers.push(marker);
-
-            if(last==1){
-                markerCluster = new MarkerClusterer(map, markers);
-            }
-        }
-
-        initMap();
-    </script>
-    <xsl:apply-templates select="finca"/>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp"></script>
+        <script src="js/markerclusterer.js"></script>
+        <script src="js/mapa.js"></script>
+        <script>
+            initMap();
+        </script>
+        <xsl:apply-templates select="finca"/>
     </xsl:template>
 
 
-  <xsl:template match="finca">
-    <script>
-        var lat = <xsl:value-of select="coordenadas/latitud"/>
-        var long = <xsl:value-of select="coordenadas/longitud"/>
-        var myLatlng = new google.maps.LatLng(lat,long);
-
-        var contentString = '<div id="content" style="width:100%; max-width:400px;">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<a href="#"><h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1></a>'+
-            '<h4 id="firstHeading" class="firstHeading"><xsl:value-of select="poblacion"/></h4>'+
-            '<div id="bodyContent">'+
-            '<a href="#"><img class="img-responsive" src="img/fondo1.jpg" style="width:100%; max-width:400px;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img></a>'+
-            '<hr></hr>'+
-            '<p><xsl:value-of select="descripcion"/></p>'+
-            '</div>'+
-            '</div>';
-
-        var info = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        <xsl:if test="position() = last()">
-
-          addmarker(myLatlng,info,1);
-
-        </xsl:if>
-        <xsl:if test="position() != last()">
-
-          addmarker(myLatlng,info,0);
-
-        </xsl:if>
-    </script>
-  </xsl:template>
+    <xsl:template match="finca">
+        <script>
+            var lat = <xsl:value-of select="coordenadas/latitud"/>
+            var long = <xsl:value-of select="coordenadas/longitud"/>
+            var myLatlng = new google.maps.LatLng(lat,long);
+            var contentString = '<div id="content" style="width:100%; max-width:400px;">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<a href="#"><h1 id="firstHeading" class="firstHeading"><xsl:value-of select="nombre"/></h1></a>'+
+                '<h4 id="firstHeading" class="firstHeading"><xsl:value-of select="poblacion"/></h4>'+
+                '<div id="bodyContent">'+
+                '<a href="#"><img class="img-responsive" src="img/fondo1.jpg" style="width:100%; max-width:400px;"><xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute></img></a>'+
+                '<hr></hr>'+
+                '<p><xsl:value-of select="descripcion"/></p>'+
+                '</div>'+
+                '</div>';
+            var info = new google.maps.InfoWindow({
+              content: contentString
+            });
+            <xsl:if test="position() = last()">
+              addmarker(myLatlng,info,1);
+            </xsl:if>
+            <xsl:if test="position() != last()">
+              addmarker(myLatlng,info,0);
+            </xsl:if>
+        </script>
+    </xsl:template>
 
 </xsl:stylesheet>

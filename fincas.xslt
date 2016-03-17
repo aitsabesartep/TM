@@ -118,6 +118,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="js/fincas.js"></script>
     <script src="js/bootstrap.js"></script>
 
 </body>
