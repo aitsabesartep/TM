@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?xml-stylesheet type="text/xsl"?>
+<!DOCTYPE fincas SYSTEM "xml/propiedad.dtd">
   <finca>
     <codi>1</codi>
     <codi_propietari>1</codi_propietari>
