@@ -223,36 +223,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-offset-1 col-lg-6">
                                     <div id="scr">
-                                    <ul class="media-list">
-                                        <xsl:apply-templates select="comentarios/comentario"/>
-                                      <li class="media">
-                                        <div class="media-left">
-                                        </div>
-                                        <div id="cm" class="media-body">
-                                          <h4 class="media-heading">Juan Antonio </h4>
-                                          <p>Fantastic!</p>
-                                          <input class="est_comment" value="5"></input>                                
-                                        </div>
-                                      </li>
-                                      <li class="media">
-                                        <div class="media-left">
-                                        </div>
-                                        <div id="cm" class="media-body">
-                                          <h4 class="media-heading">Miguel Angel</h4>
-                                          <p>Good expirience!</p>
-                                          <input class="est_comment" value="4"></input>                                
-                                        </div>
-                                      </li>
-                                      <li class="media">
-                                        <div class="media-left">
-                                        </div>
-                                        <div id="cm" class="media-body">
-                                          <h4 class="media-heading">Manolo </h4>
-                                          <p>Muy mal</p>
-                                          <input class="est_comment" value="0.5"></input>                                
-                                        </div>
-                                      </li>
-                                    </ul>
+                                        <ul class="media-list">
+                                            <xsl:apply-templates select="comentarios/comentario"/>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -357,9 +330,11 @@
             <div class="media-left">
             </div>
             <div id="cm" class="media-body">
-                <h4 class="media-heading">Juan Antonio </h4>
-                <p>Fantastic!</p>
-                <input class="est_comment" value="5"></input>                                
+                <h4 class="media-heading"><xsl:value-of select="name"/></h4>
+                <p><xsl:value-of select="opinion"/></p>
+                <input class="est_comment">
+                    <xsl:attribute name="value"><xsl:value-of select="valoracion"/></xsl:attribute>
+                </input>                                
             </div>
         </li>
     </xsl:template>
