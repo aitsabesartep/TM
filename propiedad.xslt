@@ -1,5 +1,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/finca">
+    <xsl:param name="code"/>
+    <xsl:template match="/">
+        <xsl:apply-templates select="fincas/finca[codi = $code]"/>
+    </xsl:template>
+
+<xsl:template match="finca">
         <html lang="es-ES" >
         <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -130,7 +135,7 @@
                       <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
                         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Precios</a></li>
-                        <li id="loc" onclick="mapa()" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a></li>
+                        <li id="loc" onclick="clic_ubi()" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a></li>
                         <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Comentarios</a></li>
                       </ul>
 
@@ -182,7 +187,9 @@
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="messages">
-                            <div id="map"></div>
+                            <div id="map">
+                                
+                            </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="settings">
                             <div class="row">
@@ -217,6 +224,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-offset-1 col-lg-6">
                                     <div id="scr">
                                     <ul class="media-list">
+                                        <xsl:apply-templates select="comentarios/comentario"/>
                                       <li class="media">
                                         <div class="media-left">
                                         </div>
@@ -313,29 +321,47 @@
         <footer id="peu" style="margin-top: 30px;">
             <p id="textPeu" >Copyright 2016 All rights reserved.</p>
         </footer>
-
-
             <script src="js/jquery.js"></script>
             <script type="text/javascript" src="js/jquery_propiedad.js"></script>
             <script src="js/bootstrap.js"></script>
             <script src="js/slider/jquery.flexslider-min.js"></script>
               <!-- Syntax Highlighter -->
-              <script type="text/javascript" src="js/slider/shCore.js"></script>
-              <script type="text/javascript" src="js/slider/shBrushXml.js"></script>
-              <script type="text/javascript" src="js/slider/shBrushJScript.js"></script>
-              <script type="text/javascript" src="js/star-rating.js"></script>
-
+            <script type="text/javascript" src="js/slider/shCore.js"></script>
+            <script type="text/javascript" src="js/slider/shBrushXml.js"></script>
+            <script type="text/javascript" src="js/slider/shBrushJScript.js"></script>
+            <script type="text/javascript" src="js/star-rating.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJM4SA9izScVEDXPtGpY1BqSoPcAS5C9E&amp;amp"></script>
             <script src="js/range/moment.min.js"></script>
             <script src="js/range/jquery.daterangepicker.js"></script>
             <script src="js/propiedad.js"></script>
-        </html>
-    </xsl:template>
+            <script>
+                function clic_ubi() {
+                var lat = <xsl:value-of select="coordenadas/latitud"/>
+                var long = <xsl:value-of select="coordenadas/longitud"/>
+                var myLatlng = new google.maps.LatLng(lat,long);
+                    mapa();
+                    addmarker(myLatlng);
+                }
+            </script>
+    </html>
+</xsl:template>
 
     <xsl:template match="url">
         <li><img>
             <xsl:attribute name="src"><xsl:value-of select="."/></xsl:attribute>
         </img></li>
+    </xsl:template>
+
+    <xsl:template match="comentario">
+        <li class="media">
+            <div class="media-left">
+            </div>
+            <div id="cm" class="media-body">
+                <h4 class="media-heading">Juan Antonio </h4>
+                <p>Fantastic!</p>
+                <input class="est_comment" value="5"></input>                                
+            </div>
+        </li>
     </xsl:template>
 
 </xsl:stylesheet>
