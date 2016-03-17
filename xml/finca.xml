@@ -70,6 +70,7 @@
     </precio>
     <comentarios>
       <comentario>
+        <name></name>
         <opinion></opinion>
         <valoracion></valoracion>
       </comentario>

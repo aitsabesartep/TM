@@ -11,7 +11,7 @@
 <!ELEMENT registre (dia, mes, any, num_dias)>
 <!ELEMENT precio (enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre)>
 <!ELEMENT comentarios (comentario*)>
-<!ELEMENT comentario (opinon, valoracion)>
+<!ELEMENT comentario (name, opinon, valoracion)>
 
 <!ELEMENT codi (#PCDATA)>
 <!ELEMENT codi_propietari (#PCDATA)>
@@ -60,5 +60,6 @@
 <!ELEMENT octubre (#PCDATA)>
 <!ELEMENT noviembre (#PCDATA)>
 <!ELEMENT diciembre (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
 <!ELEMENT opinion (#PCDATA)>
 <!ELEMENT valoracion (#PCDATA)>

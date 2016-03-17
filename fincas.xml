@@ -81,8 +81,9 @@
     </precio>
     <comentarios>
       <comentario>
-        <opinion></opinion>
-        <valoracion></valoracion>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>5</valoracion>
       </comentario>
     </comentarios>
   </finca>
@@ -159,8 +160,9 @@
     </precio>
     <comentarios>
       <comentario>
-        <opinion></opinion>
-        <valoracion></valoracion>
+        <name>Tià</name>
+        <opinion>Gooood experience!! Incredible!</opinion>
+        <valoracion>4</valoracion>
       </comentario>
     </comentarios>
   </finca>
@@ -243,8 +245,9 @@
     </precio>
     <comentarios>
       <comentario>
-        <opinion></opinion>
-        <valoracion></valoracion>
+        <name>Sergi</name>
+        <opinion>Excelente Finca!</opinion>
+        <valoracion>3</valoracion>
       </comentario>
     </comentarios>
   </finca>
@@ -325,11 +328,5 @@
       <noviembre>80</noviembre>
       <diciembre>80</diciembre>
     </precio>
-    <comentarios>
-      <comentario>
-        <opinion></opinion>
-        <valoracion></valoracion>
-      </comentario>
-    </comentarios>
   </finca>
 </fincas>
