@@ -102,3 +102,7 @@ input#date-range12{
 div#content{
 	width: 100%;
 }
+
+.dot_out{
+	list-style-type: none;
+}

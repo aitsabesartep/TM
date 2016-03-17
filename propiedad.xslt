@@ -143,23 +143,23 @@
                         </div>
                         <div role="tabpanel" class="tab-pane" id="profile">
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                <ul>
-                                    <li>Enero:&#160;<xsl:value-of select="precio/enero"/>€</li>
-                                    <li>Febrero:&#160;<xsl:value-of select="precio/febrero"/>€</li>
-                                    <li>Marzo:&#160;<xsl:value-of select="precio/marzo"/>€</li>
-                                    <li>Abril:&#160;<xsl:value-of select="precio/abril"/>€</li>
-                                    <li>Mayo:&#160;<xsl:value-of select="precio/mayo"/>€</li>
-                                    <li>Junio:&#160;<xsl:value-of select="precio/junio"/>€</li>
+                                 <ul>
+                                    <li class="dot_out">Enero:&#160;<xsl:value-of select="precio/enero"/>€</li>
+                                    <li class="dot_out">Febrero:&#160;<xsl:value-of select="precio/febrero"/>€</li>
+                                    <li class="dot_out">Marzo:&#160;<xsl:value-of select="precio/marzo"/>€</li>
+                                    <li class="dot_out">Abril:&#160;<xsl:value-of select="precio/abril"/>€</li>
+                                    <li class="dot_out">Mayo:&#160;<xsl:value-of select="precio/mayo"/>€</li>
+                                    <li class="dot_out">Junio:&#160;<xsl:value-of select="precio/junio"/>€</li>
                                 </ul>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                                 <ul>
-                                    <li>Julio:&#160;<xsl:value-of select="precio/julio"/>€</li>
-                                    <li>Agosto:&#160;<xsl:value-of select="precio/agosto"/>€</li>
-                                    <li>Septiembre:&#160;<xsl:value-of select="precio/septiembre"/>€</li>
-                                    <li>Octubre:&#160;<xsl:value-of select="precio/octubre"/>€</li>
-                                    <li>Noviembre:&#160;<xsl:value-of select="precio/noviembre"/>€</li>
-                                    <li>Diciembre:&#160;<xsl:value-of select="precio/diciembre"/>€</li>
+                                    <li class="dot_out">Juli class="dot_out"o:&#160;<xsl:value-of select="precio/julio"/>€</li>
+                                    <li class="dot_out">Agosto:&#160;<xsl:value-of select="precio/agosto"/>€</li>
+                                    <li class="dot_out">Septiembre:&#160;<xsl:value-of select="precio/septiembre"/>€</li>
+                                    <li class="dot_out">Octubre:&#160;<xsl:value-of select="precio/octubre"/>€</li>
+                                    <li class="dot_out">Noviembre:&#160;<xsl:value-of select="precio/noviembre"/>€</li>
+                                    <li class="dot_out">Diciembre:&#160;<xsl:value-of select="precio/diciembre"/>€</li>
                                 </ul>
                             </div>
                         </div>
