@@ -18,8 +18,6 @@
 {
 	position:absolute;
 	z-index:1;
-	border:1px solid #bfbfbf;
-	background-color:#efefef;
 	padding: 5px 12px;
 	font-size:12px;
 	line-height:20px;
@@ -55,8 +53,8 @@
 }
 .date-picker-wrapper .month-wrapper
 {
-	border:1px solid #bfbfbf;
-	border-radius:3px;
+	border:1px solid orange;
+	border-radius:10px;
 	background-color:#fff;
 	padding:5px;
 	cursor:default;
