@@ -109,7 +109,7 @@
   text-transform: uppercase;
 }
 
-.date-picker-wrapper .month-wrapper table .day.has-tooltip { cursor:help !important;}
+.date-picker-wrapper .month-wrapper table .day.has-tooltip {}
 .date-picker-wrapper .time label { white-space:nowrap; }
 .date-picker-wrapper .month-wrapper table .day.toMonth.valid
 {
@@ -254,7 +254,7 @@
 
 .date-picker-wrapper .first-date-selected { background-color:#49e !important; color:white !important;  }
 .date-picker-wrapper .last-date-selected { background-color:#49e !important; color:white !important;  }
-.date-picker-wrapper .date-range-length-tip { position:absolute; margin-top:-4px; margin-left:-8px; box-shadow:0 0 3px rgba(0,0,0,.3); display:none;background-color:yellow; padding:0 6px; border-radius:2px; font-size:12px; line-height:16px; 
+.date-picker-wrapper .date-range-length-tip { position:absolute; margin-top:-4px; margin-left:-8px; box-shadow:0 0 3px rgba(0,0,0,.3); display:none;background-color:rgb(255,230,132); padding:0 6px; border-radius:2px; font-size:12px; line-height:16px; 
 -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,.3)); 
     -moz-filter: drop-shadow(0 0 3px rgba(0,0,0,.3)); 
     -ms-filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
@@ -281,5 +281,5 @@ th{
 	font-weight:lighter;
 }
 
-.disabled { background-color: red; }
+.disabled { background-color: rgb(217, 83, 79); }
 

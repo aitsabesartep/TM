@@ -279,7 +279,7 @@
               
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
+        <div id="cal" class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a aria-controls="cal" role="tab" data-toggle="tab">Calendario</a>
             </ul>
@@ -290,7 +290,7 @@
                             <input id="date-range12" size="40" value=""/>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div style="background-color: red; height: 30px; margin-top: 20px;"> ffdsfsd</div>
                     </div>
                 </div>
@@ -305,6 +305,12 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/slider/jquery.flexslider-min.js"></script>
+
+    <script type="text/javascript">
+        $( "#preu" ).click(function() {
+            $("html, body").animate({ scrollTop: $('#cal').offset().top }, 1000);
+        });
+    </script>
 
     <script type="text/javascript">
 
@@ -435,7 +441,7 @@
         {
             $('#date-range12').dateRangePicker({
                 inline:true,
-                showTopbar: false,
+                customTopBar: 'Seleccione el día de entrada y salida',
                 container: '#content',
                 stickyMonths: true,
                 startOfWeek: 'monday',
@@ -444,11 +450,15 @@
                 beforeShowDay: function(t)
                 {
                     //Comprovar dies ja seleccionats
-                    var valid = !(t.getDate() == 10);  //disable saturday and sunday
+                    var valid = !(t.getDate() == 10 || t.getDate() == 9 || t.getDate() == 8);  //disable saturday and sunday
                     var _class = valid ? '' : 'disabled';
                     var _tooltip = valid ? '' : '1';
                     return [valid,_class,_tooltip];
                 }
+            })
+            .bind('datepicker-change',function(event,obj)
+            {
+                alert("Dues dates seleccionades, obrir div");
             });
         })
     </script>

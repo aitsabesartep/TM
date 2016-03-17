@@ -2172,7 +2172,7 @@
 						today.valid = _r[0];
 						today.extraClass = _r[1] || '';
 						today.tooltip = _r[2] || '';
-						if (today.tooltip != '') today.extraClass += ' has-tooltip ';
+						if (today.tooltip != '') today.extraClass += ' ';
 					}
 
 					var todayDivAttr = {
