@@ -6,9 +6,9 @@
     <codi>1</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc></finc>
+      <finc/>
       <casa>1</casa>
-      <apartamento></apartamento>
+      <apartamento/>
     </tipo>
     <nombre>Oasis</nombre>
     <imagenes>
@@ -58,7 +58,7 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-    </calendario>
+    <registre><dia>11</dia><mes>5</mes><any>2016</any><ndias>8</ndias><dia>11</dia><mes>5</mes><any>2016</any><ndias>8</ndias></registre><registre/></calendario>
     <precio>
       <enero>80</enero>
       <febrero>80</febrero>
@@ -107,7 +107,7 @@
     <tipo>
       <finc>1</finc>
       <casa>1</casa>
-      <apartamento></apartamento>
+      <apartamento/>
     </tipo>
     <nombre>Palacio</nombre>
     <imagenes>
@@ -151,12 +151,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia></dia>
-        <mes></mes>
-        <any></any>
-        <ndias></ndias>
-      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -184,9 +178,9 @@
     <codi>3</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc></finc>
+      <finc/>
       <casa>1</casa>
-      <apartamento></apartamento>
+      <apartamento/>
     </tipo>
     <nombre>Oasis</nombre>
     <imagenes>
@@ -227,8 +221,8 @@
       <cocina>
         <tostadora>1</tostadora>
         <horno>1</horno>
-        <nevera></nevera>
-        <congelador></congelador>
+        <nevera/>
+        <congelador/>
       </cocina>
     </servicios>
     <hora>
@@ -236,12 +230,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia></dia>
-        <mes></mes>
-        <any></any>
-        <ndias></ndias>
-      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -269,9 +257,9 @@
     <codi>4</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc></finc>
+      <finc/>
       <casa>1</casa>
-      <apartamento></apartamento>
+      <apartamento/>
     </tipo>
     <nombre>Oasis</nombre>
     <imagenes>
@@ -312,8 +300,8 @@
       <cocina>
         <tostadora>1</tostadora>
         <horno>1</horno>
-        <nevera></nevera>
-        <congelador></congelador>
+        <nevera/>
+        <congelador/>
       </cocina>
     </servicios>
     <hora>
