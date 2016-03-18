@@ -62,7 +62,7 @@
         <dia></dia>
         <mes></mes>
         <any></any>
-        <num_dias></num_dias>
+        <ndias></ndias>
       </registre>
     </calendario>
     <precio>
@@ -161,7 +161,7 @@
         <dia></dia>
         <mes></mes>
         <any></any>
-        <num_dias></num_dias>
+        <ndias></ndias>
       </registre>
     </calendario>
     <precio>
@@ -246,7 +246,7 @@
         <dia></dia>
         <mes></mes>
         <any></any>
-        <num_dias></num_dias>
+        <ndias></ndias>
       </registre>
     </calendario>
     <precio>
@@ -328,10 +328,16 @@
     </hora>
     <calendario>
       <registre>
-        <dia></dia>
-        <mes></mes>
-        <any></any>
-        <num_dias></num_dias>
+        <dia>1</dia>
+        <mes>3</mes>
+        <any>2016</any>
+        <ndias>5</ndias>
+      </registre>
+      <registre>
+        <dia>26</dia>
+        <mes>3</mes>
+        <any>2016</any>
+        <ndias>10</ndias>
       </registre>
     </calendario>
     <precio>

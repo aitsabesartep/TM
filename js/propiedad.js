@@ -1,6 +1,7 @@
- 
-                $(function()
+
+                function initCal(d)
                 {
+                    var dies = d;
                     $('#date-range12').dateRangePicker({
                         inline:true,
                         customTopBar: 'Seleccione el día de entrada y salida',
@@ -12,7 +13,15 @@
                         beforeShowDay: function(t)
                         {
                             //Comprovar dies ja seleccionats
-                            var valid = !(t.getDate() == 10 || t.getDate() == 9 || t.getDate() == 8);  //disable saturday and sunday
+                            var valid = true;
+                            for (var i = 0; i < dies.length; i++) {
+                                if (dies[i].getDate() == t.getDate()
+                                    && dies[i].getMonth() == t.getMonth()
+                                    && dies[i].getFullYear() == t.getFullYear()) {
+                                   valid = false;
+                                   break;
+                                }
+                            }
                             var _class = valid ? '' : 'disabled';
                             var _tooltip = valid ? '' : '1';
                             return [valid,_class,_tooltip];
@@ -26,14 +35,14 @@
                     {
                         $("#pagament").show(500);
                     });
-                })
+                }
 
 
                 var map ='';
                 function initMap(){
                     var opt = {
                         center: new google.maps.LatLng(39.6130537, 2.8864253),
-                        zoom: 9
+                        zoom: 10
                     };
                     //Per assegurar que nomes carrega un unic pic
                     if(!map){
@@ -141,4 +150,9 @@
                     stars:5,
                     showClear: false,
                     showCaption: false
+                });
+
+
+                $( document ).ready(function() {
+                    $("#pagament").hide(); 
                 });

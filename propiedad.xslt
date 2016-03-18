@@ -242,7 +242,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <div id="content">
-                                    <input id="date-range12" size="40" value=""/>
+                                    <xsl:apply-templates select="calendario"/>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -316,6 +316,10 @@
                     addmarker(myLatlng);
                 }
             </script>
+
+            <script>
+                initCal(dies);
+            </script>
     </html>
 </xsl:template>
 
@@ -337,6 +341,36 @@
                 </input>                                
             </div>
         </li>
+    </xsl:template>
+
+    <xsl:template match="calendario">
+        <script>
+            var dies = [];
+        </script>
+        <input id="date-range12" size="40" value=""/>
+            <xsl:for-each select="registre">
+                <script>
+                    var dia = <xsl:value-of select="dia"/>
+                    var mes = <xsl:value-of select="mes"/>
+                    //Restam -1 xq es més comença a 0
+                    mes = mes - 1;
+                    var any = <xsl:value-of select="any"/>
+                    var cuants = <xsl:value-of select="ndias"/>
+                    d = new Date(any, mes, dia)
+                    dies.push(d);
+                    var idx;
+                    <xsl:text disable-output-escaping="yes">
+                    for (idx = 1; idx &lt; cuants - 1; idx++) {
+                        var d1 = null;
+                        d1 = new Date(d.getTime());
+                        var inc = d1.getDate();
+                        inc = inc + idx;
+                        d1.setDate(inc);
+                        dies.push(new Date(d1));
+                    }
+                    </xsl:text>
+                </script>
+            </xsl:for-each>
     </xsl:template>
 
 </xsl:stylesheet>

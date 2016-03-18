@@ -8,7 +8,7 @@
 <!ELEMENT cocina (tostadora?, horno?, lavavajillas?, cafetera?, microondas?, nevera?, congelador?)>
 <!ELEMENT hora (entrada, salida)>
 <!ELEMENT calendario (registre*)>
-<!ELEMENT registre (dia, mes, any, num_dias)>
+<!ELEMENT registre (dia, mes, any, ndias)>
 <!ELEMENT precio (enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre)>
 <!ELEMENT comentarios (comentario*)>
 <!ELEMENT comentario (name, opinon, valoracion)>
@@ -47,7 +47,7 @@
 <!ELEMENT dia (#PCDATA)>
 <!ELEMENT mes (#PCDATA)>
 <!ELEMENT any (#PCDATA)>
-<!ELEMENT num_dias (#PCDATA)>
+<!ELEMENT ndias (#PCDATA)>
 <!ELEMENT enero (#PCDATA)>
 <!ELEMENT febrero (#PCDATA)>
 <!ELEMENT marzo (#PCDATA)>
