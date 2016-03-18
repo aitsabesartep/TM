@@ -247,7 +247,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <div id="pagament" style="margin-top: 25px; padding: 10px;">
-                                        <form class="form-horizontal" role="form" method="post" action="">
+                                        <form class="form-horizontal" role="form" method="post" action="reserva.php">
                                             <h4>Datos reserva</h4>
                                             <div class="form-group">
                                                 <label for="name" class="col-sm-2 control-label">Nombre</label>
@@ -295,7 +295,6 @@
             <p id="textPeu" >Copyright 2016 All rights reserved.</p>
         </footer>
             <script src="js/jquery.js"></script>
-            <script type="text/javascript" src="js/jquery_propiedad.js"></script>
             <script src="js/bootstrap.js"></script>
             <script src="js/slider/jquery.flexslider-min.js"></script>
               <!-- Syntax Highlighter -->

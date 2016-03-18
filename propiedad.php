@@ -9,7 +9,7 @@ $xsl->load('propiedad.xslt');
 
 // Configure the transformer
 $proc = new XSLTProcessor;
-$proc->setParameter ( '' , 'code' , '4' );
+$proc->setParameter ( '' , 'code' , $_GET['codi'] );
 $proc->importStyleSheet($xsl); // attach the xsl rules
 
 echo $proc->transformToXML($xml);

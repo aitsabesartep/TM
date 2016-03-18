@@ -60,6 +60,16 @@ hr{
   h3#preui{
     font-size: 15px;
   }
+  a#preui{
+    font-size: 15px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -70,11 +80,31 @@ hr{
   h3#preui{
     font-size: 18px;
   }
+  a#preui{
+    font-size: 18px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 18px;
+    color: white;
+    text-decoration:none;
+  }
 }
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
       span#desde{
     font-size: 12px;
+  }
+  a#preui{
+    font-size: 20px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
   }
 }
 /* large desktops and up ----------- */
@@ -85,5 +115,16 @@ hr{
 
   h3#preui{
     font-size: 20px;
+  }
+
+  a#preui{
+    font-size: 20px;
+    color: white;
+  }
+
+  a#preui:hover{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
   }
 }
