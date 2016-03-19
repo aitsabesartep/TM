@@ -128,3 +128,7 @@ hr{
     text-decoration:none;
   }
 }
+
+div#filter-panel{
+  padding-left: 0px;
+}
