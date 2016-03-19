@@ -121,7 +121,7 @@
                 });
 
                 
-                  $("#input-id").rating({
+                $("#input-id").rating({
                     min:0,
                     max:5,
                     step:0.5,

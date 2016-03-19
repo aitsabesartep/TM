@@ -6,11 +6,11 @@
     <codi>1</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc/>
+      <finc></finc>
       <casa>1</casa>
-      <apartamento/>
+      <apartamento></apartamento>
     </tipo>
-    <nombre> Hooooola</nombre>
+    <nombre>Oasis</nombre>
     <imagenes>
       <url>img/img_fincas/oasis/img0.jpg</url>
       <url>img/img_fincas/oasis/img1.jpg</url>
@@ -58,27 +58,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia>7</dia>
-        <mes>1</mes>
-        <any>2016</any>
-        <numdies>5</numdies>
-        <dia>7</dia>
-        <mes>1</mes>
-        <any>2016</any>
-        <numdies>5</numdies>
-        <dia>7</dia>
-        <mes>1</mes>
-        <any>2016</any>
-        <numdies>5</numdies>
-        <dia>7</dia>
-        <mes>1</mes>
-        <any>2016</any>
-        <numdies>5</numdies>
-      </registre>
-      <registre/>
-      <registre/>
-      <registre/>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -94,7 +73,280 @@
       <noviembre>80</noviembre>
       <diciembre>80</diciembre>
     </precio>
-    <comentarios><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>2</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>3</valoracion></comentario>1
+    <comentarios>
+      <comentario>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>Joan</name>
+        <opinion>good job!</opinion>
+        <valoracion>3</valoracion>
+      </comentario>1
     </comentarios>
+  </finca>
+  <finca>
+    <codi>2</codi>
+    <codi_propietari>1</codi_propietari>
+    <tipo>
+      <finc>1</finc>
+      <casa>1</casa>
+      <apartamento></apartamento>
+    </tipo>
+    <nombre>Palacio</nombre>
+    <imagenes>
+      <url>img/img_fincas/palacio/img0.jpg</url>
+      <url>img/img_fincas/palacio/img1.jpg</url>
+      <url>img/img_fincas/palacio/img2.jpg</url>
+      <url>img/img_fincas/palacio/img3.jpg</url>
+      <url>img/img_fincas/palacio/img4.jpg</url>
+      <url>img/img_fincas/palacio/img5.jpg</url>
+      <url>img/img_fincas/palacio/img6.jpg</url>
+      <url>img/img_fincas/palacio/img7.jpg</url>
+      <url>img/img_fincas/palacio/img8.jpg</url>
+      <url>img/img_fincas/palacio/img9.jpg</url>
+      <url>img/img_fincas/palacio/img10.jpg</url>
+      <url>img/img_fincas/palacio/img11.jpg</url>
+      <url>img/img_fincas/palacio/img12.jpg</url>
+      <url>img/img_fincas/palacio/img13.jpg</url>
+      <url>img/img_fincas/palacio/img14.jpg</url>
+      <url>img/img_fincas/palacio/img15.jpg</url>
+      <url>img/img_fincas/palacio/img16.jpg</url>
+      <url>img/img_fincas/palacio/img17.jpg</url>
+    </imagenes>
+    <descripcion>Casa muy grande situada en las afueras de Petra, a tan solo 20 minutos de la playa. Es el mejor pueblo de Mallorca, por sus habitantes</descripcion>
+    <poblacion>Petra</poblacion>
+    <coordenadas>
+      <longitud>3.1139447</longitud>
+      <latitud>39.617201</latitud>
+    </coordenadas>
+    <capacidad_personas>6</capacidad_personas>
+    <metros_casa>150</metros_casa>
+    <metros_terreno>500</metros_terreno>
+    <num_habitaciones>3</num_habitaciones>
+    <num_banyos>2</num_banyos>
+    <servicios>
+      <internet>Internet</internet>
+      <piscina>Piscina</piscina>
+      <television>TV por cable</television>
+    </servicios>
+    <hora>
+      <entrada>14:00</entrada>
+      <salida>10:00</salida>
+    </hora>
+    <calendario>
+      <registre>
+        <dia></dia>
+        <mes></mes>
+        <any></any>
+        <ndias></ndias>
+      </registre>
+    </calendario>
+    <precio>
+      <enero>80</enero>
+      <febrero>80</febrero>
+      <marzo>90</marzo>
+      <abril>90</abril>
+      <mayo>100</mayo>
+      <junio>100</junio>
+      <julio>150</julio>
+      <agosto>150</agosto>
+      <septiembre>100</septiembre>
+      <octubre>100</octubre>
+      <noviembre>80</noviembre>
+      <diciembre>80</diciembre>
+    </precio>
+    <comentarios>
+      <comentario>
+        <name>Tià</name>
+        <opinion>Gooood experience!! Incredible!</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>3</codi>
+    <codi_propietari>1</codi_propietari>
+    <tipo>
+      <finc></finc>
+      <casa>1</casa>
+      <apartamento></apartamento>
+    </tipo>
+    <nombre>Oasis</nombre>
+    <imagenes>
+      <url>img/img_fincas/oasis/img0.jpg</url>
+      <url>img/img_fincas/oasis/img1.jpg</url>
+      <url>img/img_fincas/oasis/img2.jpg</url>
+      <url>img/img_fincas/oasis/img3.jpg</url>
+      <url>img/img_fincas/oasis/img4.jpg</url>
+      <url>img/img_fincas/oasis/img5.jpg</url>
+      <url>img/img_fincas/oasis/img6.jpg</url>
+      <url>img/img_fincas/oasis/img7.jpg</url>
+      <url>img/img_fincas/oasis/img8.jpg</url>
+      <url>img/img_fincas/oasis/img9.jpg</url>
+      <url>img/img_fincas/oasis/img10.jpg</url>
+      <url>img/img_fincas/oasis/img11.jpg</url>
+      <url>img/img_fincas/oasis/img12.jpg</url>
+      <url>img/img_fincas/oasis/img13.jpg</url>
+      <url>img/img_fincas/oasis/img14.jpg</url>
+      <url>img/img_fincas/oasis/img15.jpg</url>
+      <url>img/img_fincas/oasis/img16.jpg</url>
+      <url>img/img_fincas/oasis/img17.jpg</url>
+    </imagenes>
+    <descripcion>Finca situada en las afueras...</descripcion>
+    <poblacion>Petra</poblacion>
+    <coordenadas>
+      <longitud>3.096299</longitud>
+      <latitud>39.616598</latitud>
+    </coordenadas>
+    <capacidad_personas>12</capacidad_personas>
+    <metros_casa>300</metros_casa>
+    <metros_terreno>2000</metros_terreno>
+    <num_habitaciones>8</num_habitaciones>
+    <num_banyos>8</num_banyos>
+    <servicios>
+      <piscina>Piscina</piscina>
+      <lavadora>Lavadora</lavadora>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <tostadora>1</tostadora>
+        <horno>1</horno>
+        <nevera></nevera>
+        <congelador></congelador>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>14:00</entrada>
+      <salida>10:00</salida>
+    </hora>
+    <calendario>
+      <registre>
+        <dia></dia>
+        <mes></mes>
+        <any></any>
+        <ndias></ndias>
+      </registre>
+    </calendario>
+    <precio>
+      <enero>80</enero>
+      <febrero>80</febrero>
+      <marzo>90</marzo>
+      <abril>90</abril>
+      <mayo>100</mayo>
+      <junio>100</junio>
+      <julio>150</julio>
+      <agosto>150</agosto>
+      <septiembre>100</septiembre>
+      <octubre>100</octubre>
+      <noviembre>80</noviembre>
+      <diciembre>80</diciembre>
+    </precio>
+    <comentarios>
+      <comentario>
+        <name>Sergi</name>
+        <opinion>Excelente Finca!</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+    </comentarios>
+  </finca>
+  <finca>
+    <codi>4</codi>
+    <codi_propietari>1</codi_propietari>
+    <tipo>
+      <finc></finc>
+      <casa>1</casa>
+      <apartamento></apartamento>
+    </tipo>
+    <nombre>Oasis</nombre>
+    <imagenes>
+      <url>img/img_fincas/oasis/img0.jpg</url>
+      <url>img/img_fincas/oasis/img1.jpg</url>
+      <url>img/img_fincas/oasis/img2.jpg</url>
+      <url>img/img_fincas/oasis/img3.jpg</url>
+      <url>img/img_fincas/oasis/img4.jpg</url>
+      <url>img/img_fincas/oasis/img5.jpg</url>
+      <url>img/img_fincas/oasis/img6.jpg</url>
+      <url>img/img_fincas/oasis/img7.jpg</url>
+      <url>img/img_fincas/oasis/img8.jpg</url>
+      <url>img/img_fincas/oasis/img9.jpg</url>
+      <url>img/img_fincas/oasis/img10.jpg</url>
+      <url>img/img_fincas/oasis/img11.jpg</url>
+      <url>img/img_fincas/oasis/img12.jpg</url>
+      <url>img/img_fincas/oasis/img13.jpg</url>
+      <url>img/img_fincas/oasis/img14.jpg</url>
+      <url>img/img_fincas/oasis/img15.jpg</url>
+      <url>img/img_fincas/oasis/img16.jpg</url>
+      <url>img/img_fincas/oasis/img17.jpg</url>
+    </imagenes>
+    <descripcion>Finca situada en las afueras...</descripcion>
+    <poblacion>Petra</poblacion>
+    <coordenadas>
+      <longitud>3.110729</longitud>
+      <latitud>39.64884</latitud>
+    </coordenadas>
+    <capacidad_personas>12</capacidad_personas>
+    <metros_casa>300</metros_casa>
+    <metros_terreno>2000</metros_terreno>
+    <num_habitaciones>8</num_habitaciones>
+    <num_banyos>8</num_banyos>
+    <servicios>
+      <piscina>Piscina</piscina>
+      <lavadora>Lavadora</lavadora>
+      <barbacoa>Barbacoa</barbacoa>
+      <cocina>
+        <tostadora>1</tostadora>
+        <horno>1</horno>
+        <nevera></nevera>
+        <congelador></congelador>
+      </cocina>
+    </servicios>
+    <hora>
+      <entrada>14:00</entrada>
+      <salida>10:00</salida>
+    </hora>
+    <calendario>
+      <registre>
+        <dia>1</dia>
+        <mes>3</mes>
+        <any>2016</any>
+        <ndias>5</ndias>
+      </registre>
+      <registre>
+        <dia>26</dia>
+        <mes>3</mes>
+        <any>2016</any>
+        <ndias>10</ndias>
+      </registre>
+    </calendario>
+    <precio>
+      <enero>80</enero>
+      <febrero>80</febrero>
+      <marzo>90</marzo>
+      <abril>90</abril>
+      <mayo>100</mayo>
+      <junio>100</junio>
+      <julio>150</julio>
+      <agosto>150</agosto>
+      <septiembre>100</septiembre>
+      <octubre>100</octubre>
+      <noviembre>80</noviembre>
+      <diciembre>80</diciembre>
+    </precio>
   </finca>
 </fincas>

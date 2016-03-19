@@ -136,7 +136,7 @@
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
                         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Precios</a></li>
                         <li id="loc" onclick="clic_ubi()" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Localización</a></li>
-                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Comentarios</a></li>
+                        <li role="presentation"><a id="com" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Comentarios</a></li>
                       </ul>
 
                       <!-- Tab panes -->
@@ -168,21 +168,22 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><xsl:value-of select="precio/enero"/></td>
-                                                <td><xsl:value-of select="precio/febrero"/></td>
-                                                <td><xsl:value-of select="precio/marzo"/></td>
-                                                <td><xsl:value-of select="precio/abril"/></td>
-                                                <td><xsl:value-of select="precio/mayo"/></td>
-                                                <td><xsl:value-of select="precio/junio"/></td>
-                                                <td><xsl:value-of select="precio/julio"/></td>
-                                                <td><xsl:value-of select="precio/agosto"/></td>
-                                                <td><xsl:value-of select="precio/septiembre"/></td>
-                                                <td><xsl:value-of select="precio/octubre"/></td>
-                                                <td><xsl:value-of select="precio/noviembre"/></td>
-                                                <td><xsl:value-of select="precio/diciembre"/></td>
+                                                <td><xsl:value-of select="precio/enero"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/febrero"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/marzo"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/abril"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/mayo"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/junio"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/julio"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/agosto"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/septiembre"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/octubre"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/noviembre"/>&#160;&#8364;</td>
+                                                <td><xsl:value-of select="precio/diciembre"/>&#160;&#8364;</td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <h6 id="nota">*Precio por noche</h6>
                                 </div>
                             </div>
                         </div>
@@ -193,6 +194,13 @@
                         </div>
                         <div role="tabpanel" class="tab-pane" id="settings">
                             <div class="row">
+                                <div id="fins" class="col-xs-12 col-sm-12 col-md-7 col-md-offset-0 col-lg-offset-0 col-lg-7">
+                                    <div id="scr">
+                                        <ul id="lista" class="media-list">
+                                            <xsl:apply-templates select="comentarios/comentario"/>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <div id="comentari" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                     <form class="form-horizontal" role="form" method="post" action="">
                                         <h4>Déjanos tu comentario</h4>
@@ -220,13 +228,6 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-offset-1 col-lg-6">
-                                    <div id="scr">
-                                        <ul class="media-list">
-                                            <xsl:apply-templates select="comentarios/comentario"/>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -329,17 +330,16 @@
     </xsl:template>
 
     <xsl:template match="comentario">
-        <li class="media">
-            <div class="media-left">
-            </div>
+        <li id="coment" class="media">
             <div id="cm" class="media-body">
-                <h4 class="media-heading"><xsl:value-of select="name"/></h4>
+                <h4 id="nom_comment" class="media-heading"><xsl:value-of select="name"/></h4>
                 <p><xsl:value-of select="opinion"/></p>
                 <input class="est_comment">
                     <xsl:attribute name="value"><xsl:value-of select="valoracion"/></xsl:attribute>
                 </input>                                
             </div>
         </li>
+        <hr></hr>
     </xsl:template>
 
     <xsl:template match="calendario">
