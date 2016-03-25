@@ -1,8 +1,10 @@
+div#tot {
+    margin-top: 85px;
+}
 
 div#main_r{
 	padding: inherit;
 }
-
 
 div#contingut_dreta{
 	margin: auto;
@@ -136,4 +138,8 @@ h6#nota{
 	color: rgba(170,170,170,1)!important;
 	font-size: 12px;
 	font-style: oblique;
+}
+
+th#mes {
+    font-weight: lighter;
 }

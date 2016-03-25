@@ -1,12 +1,5 @@
-button#filtro{
-  border-color: black;
-  background: rgba(255, 166, 0, 0.0)!important;
-}
-
-button#filtro{
-  border-color: black;
-  background: rgba(255, 166, 0, 0.0)!important;
-  font-size: 15px;
+div#cos_fincas{
+  margin-top: 80px;
 }
 
 div#target{
@@ -41,6 +34,10 @@ div#preu{
   border-radius: 10px;
   vertical-align: middle;
   text-align: center;
+}
+
+span#filtro{
+  font-style: normal;
 }
 
 

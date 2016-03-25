@@ -23,6 +23,7 @@ div#menu{
 
 a#item_text:hover{
   background-color: #337AB7;
+  cursor: pointer;
 }
 
 a#item_text{
@@ -37,7 +38,7 @@ a#item_fincas{
 	font-size: 30px;
 }
 
-li#menu_active{
+.menu_active{
 	background-color: #337AB7;
 }
 
