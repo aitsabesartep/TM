@@ -114,7 +114,7 @@ function cal(codi) {
             initCal(dies);
         }
     };
-    xhttp.open("GET", "XML/fincas.xml", true);
+    xhttp.open("GET", "xml/fincas.xml", true);
     xhttp.send();
 }
 
