@@ -147,24 +147,24 @@
                             </div>
                         </div>
                         <div id="comentari" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <form class="form-horizontal" role="form" method="post" action="">
+                            <form class="form-horizontal" role="form" method="post" action="php/savecoment.php">
                                 <h4>Déjanos tu comentario</h4>
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label">Name</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" value=""></input>
+                                        <input type="text" class="form-control" id="name" name="nom" placeholder="Nombre y apellido" value=""></input>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="col-sm-2 control-label">Rating</label>
                                     <div class="col-sm-10">
-                                        <input id="input-id2" value="3"></input>
+                                        <input id="input-id2" value="3" name="valor"></input>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="col-sm-2 control-label">Mensaje</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" rows="4" name="message"></textarea>
+                                        <textarea class="form-control" rows="4" name="opinio"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
