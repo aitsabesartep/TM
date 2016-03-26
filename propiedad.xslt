@@ -72,7 +72,7 @@
         <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
             <div id="descripcio">
             <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
+              <ul id="tablist" class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Precios</a></li>
                 <li id="loc" role="presentation">
@@ -191,7 +191,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div id="pagament" style="margin-top: 25px; padding: 10px;">
+                    <div id="pagament" class="hidden" style="margin-top: 25px; padding: 10px;">
                             <form class="form-horizontal" role="form" method="post" action="reserva.php">
                                 <h4>Datos reserva</h4>
                                 <div class="form-group">

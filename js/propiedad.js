@@ -1,58 +1,55 @@
- /*function initCal(d)
- {
- var dies = d;
- $('#date-range12').dateRangePicker({
- inline:true,
- customTopBar: 'Seleccione el día de entrada y salida',
- container: '#content',
- stickyMonths: true,
- startOfWeek: 'monday',
- language: 'es',
- alwaysOpen:true,
- beforeShowDay: function(t)
- {
- //Comprovar dies ja seleccionats
- var valid = true;
- for (var i = 0; i < dies.length; i++) {
- if (dies[i].getDate() == t.getDate()
- && dies[i].getMonth() == t.getMonth()
- && dies[i].getFullYear() == t.getFullYear()) {
- valid = false;
- break;
- }
- }
- var _class = valid ? '' : 'disabled';
- var _tooltip = valid ? '' : '1';
- return [valid,_class,_tooltip];
- }
- })
- .bind('datepicker-first-date-selected', function(event, obj)
- {
- $("#pagament").hide(500); 
- })
- .bind('datepicker-change',function(event,obj)
- {
- $("#pagament").show(500);
- });
- }*/
+function initCal(d)
+{
+    var dies = d;
+    $('#date-range12').dateRangePicker({
+        inline:true,
+        customTopBar: 'Seleccione el dia de entrada y salida',
+        container: '#content',
+        stickyMonths: true,
+        startOfWeek: 'monday',
+        language: 'es',
+        alwaysOpen:true,
+        beforeShowDay: function(t)
+        {
+            //Comprovar dies ja seleccionats
+            var valid = true;
+            for (var i = 0; i < dies.length; i++) {
+                if (dies[i].getDate() == t.getDate() && dies[i].getMonth() == t.getMonth() && dies[i].getFullYear() == t.getFullYear()) {
+                    valid = false;
+                    break;
+                }   
+            }
+            var _class = valid ? '' : 'disabled';
+            var _tooltip = valid ? '' : '1';
+            return [valid,_class,_tooltip];
+        }
+    })
+    .bind('datepicker-first-date-selected', function(event, obj)
+    {
+        $('#pagament').addClass('hidden');
+    })
+    .bind('datepicker-change',function(event,obj)
+    {
+        $('#pagament').removeClass('hidden');
+    });
+}
 
+mapaPropiedad = '';
 function startMap(p){
-    var mapP = null;
-    document.getElementById('mapP').innerHTML = "";
     var opt = {
         center: p,
         zoom: 10
     };
-    mapP = new google.maps.Map(document.getElementById("mapP"), opt);
-    return mapP;
+    mapaPropiedad = new google.maps.Map(document.getElementById("mapP"), opt);
+    addmarkerPropiedad(p);
 }
 
- function addmarkerPropiedad(p, mapP) {
+ function addmarkerPropiedad(p) {
      var marker = new google.maps.Marker({
      position: p,
      title: 'titol',
      clickable: true,
-     map: mapP
+     map: mapaPropiedad
      });
  }
 
@@ -64,37 +61,37 @@ function mapa(long, latitud) {
     }else{
         w = w/2;
     }
-    var pos = new google.maps.LatLng(latitud, long);
     document.getElementById('mapP').style.height = w+'px';
-    addmarkerPropiedad(pos, startMap(pos));
+    var pos = new google.maps.LatLng(latitud, long);
+    setTimeout(function(){startMap(pos);}, 50);
+
 }
-/*
+
 var dies = [];
+
 function pintarCalendari(xml, codi){
     var xmlDoc = xml.responseXML;
-    var fincas = xmlDoc.getElementsByTagName("fincas");
-    alert(fincas[0].nodeValue);
+    var fincas = xmlDoc.getElementsByTagName("finca");
     var finca;
     var i;
 
     for (i = 0; i < fincas.length; i++) {
-        if (parseInt(fincas[i].childNodes[0].nodeValue) == codi) {
+        if (parseInt(fincas[i].getElementsByTagName('codi')[0].textContent) == codi) {
             finca = fincas[i];
+            break
         }
     }
-    alert(finca);
 
-    var calendario = finca.getElementsByTagName("calendario");
-    
+    var calendario = (finca.getElementsByTagName('calendario')[0]);
+    var registres = calendario.getElementsByTagName('registre');
 
-    for (i = 0; i < calendario.length; i++) {
-        var reg = calendario.childNodes[i];
-        var dia = reg.childNodes[0];
-        var mes = reg.childNodes[1];
+    for (i = 0; i < registres.length; i++) {
+        var dia = parseInt(registres[i].getElementsByTagName('dia')[0].textContent);
+        var mes = parseInt(registres[i].getElementsByTagName('mes')[0].textContent);
         //Restam -1 xq es més comença a 0
         mes = mes - 1;
-        var any = reg.childNodes[2];
-        var cuants = reg.childNodes[3];
+        var any = parseInt(registres[i].getElementsByTagName('any')[0].textContent);
+        var cuants = parseInt(registres[i].getElementsByTagName('ndias')[0].textContent);
         d = new Date(any, mes, dia)
         dies.push(d);
         var idx;
@@ -107,11 +104,27 @@ function pintarCalendari(xml, codi){
             dies.push(new Date(d1));
         }
     }
-}*/
+}
 
-function initPropiedad(response){
+function cal(codi) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            pintarCalendari(xhttp, codi);
+            initCal(dies);
+        }
+    };
+    xhttp.open("GET", "XML/fincas.xml", true);
+    xhttp.send();
+}
+
+function initPropiedad(codi){
     initStar();
     initFlex();
+    cal(codi);
+    $('#preu').click(function() {
+    $("html, body").animate({ scrollTop: $('#date-range12').offset().top }, 1000);
+ });
 }
 
 function initFlex(){
@@ -145,11 +158,6 @@ function initFlex(){
     });
 };
 
-/*
- $( "#preu" ).click(function() {
- $("html, body").animate({ scrollTop: $('#cal').offset().top }, 1000);
- });
-*/
 
 function initStar(){
 
@@ -184,9 +192,3 @@ function initStar(){
         showCaption: false
     });
 }
-
-/*
- $( document ).ready(function() {
- $("#pagament").hide(); 
- initCal(dies);
- });*/

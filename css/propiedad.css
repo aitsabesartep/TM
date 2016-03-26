@@ -143,3 +143,5 @@ h6#nota{
 th#mes {
     font-weight: lighter;
 }
+
+.hidden { display: none; }
