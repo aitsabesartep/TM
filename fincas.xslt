@@ -75,7 +75,7 @@
     <div class="row">
       <div id="cuadro_finca" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
         <div class="col-md-12 col-lg-6">
-            <a class="mouse_select"><xsl:attribute name="onclick">loadPropiedad(<xsl:value-of select="codi"/>)</xsl:attribute>
+          <a><xsl:attribute name="onclick">loadPropiedad(<xsl:value-of select="codi"/>)</xsl:attribute>
             <img id="img_finca" class="img-responsive">
                   <xsl:attribute name="src"><xsl:value-of select="imagenes/url"/></xsl:attribute>
             </img>
@@ -85,7 +85,7 @@
             <div id="rp" class="row">
                 <div class="col-md-12">
                     <h3>
-                    <a class="mouse_select">
+                    <a>
                         <xsl:attribute name="onclick">loadPropiedad(<xsl:value-of select="codi"/>)</xsl:attribute>
                         <xsl:value-of select="nombre"/>
                     </a>
@@ -114,7 +114,7 @@
               </div>
               <div id="preu" class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
                  <h3 id="preui" class="btn btn-success">
-                    <a id="preui"><xsl:attribute name="onclick">loadPropiedad(<xsl:value-of select="codi"/>)</xsl:attribute>
+                    <a id="preui"><xsl:attribute name="href">propiedad.php?codi=<xsl:value-of select="codi"/></xsl:attribute>
                     <span id="desde">desde</span>&#160;<xsl:value-of select="precio/enero"/>&#160;€/noche
                     </a>
                 </h3>
