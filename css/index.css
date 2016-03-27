@@ -36,3 +36,7 @@ div#element{
   background-color: orange;
   border-color: white;
 }
+
+a#ln{
+  cursor: pointer;
+}

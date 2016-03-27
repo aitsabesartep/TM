@@ -9,6 +9,7 @@ function loadPropiedad(codi){
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             $("#cos").html(xhttp.responseText);
+            actualitzarMenu(1);
             initPropiedad(codi);
         }
     };

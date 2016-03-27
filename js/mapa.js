@@ -36,22 +36,25 @@ function pintarFinques(xml, map){
     var fincas = xmlDoc.getElementsByTagName("finca");
     var i;
     for (i = 0; i < fincas.length; i++) {
-        var codi = fincas[i].childNodes[1].textContent;
-        var long = fincas[i].childNodes[15].childNodes[1].textContent;
-        var lat = fincas[i].childNodes[15].childNodes[3].textContent;
+        var codi = fincas[i].getElementsByTagName('codi')[0].textContent;
+        var long = fincas[i].getElementsByTagName('coordenadas')[0].getElementsByTagName('longitud')[0].textContent;
+        var lat  = fincas[i].getElementsByTagName('coordenadas')[0].getElementsByTagName('latitud')[0].textContent;
         var last = 0;
         if (i == fincas.length - 1) {last = 1;}
         var myLatlng = new google.maps.LatLng(lat,long);
-
+        var nom = fincas[i].getElementsByTagName('nombre')[0].textContent;
+        var poblacion = fincas[i].getElementsByTagName('poblacion')[0].textContent;
+        var url = fincas[i].getElementsByTagName('imagenes')[0].getElementsByTagName('url')[0].textContent;
+        var des = fincas[i].getElementsByTagName('descripcion')[0].textContent;
         var info = '        <div id="content" style="width:100%; max-width:400px;">'
                 + '            <div id="siteNotice">'
                 + '            </div>'
-                + '            <a><h1 id="firstHeading" class="firstHeading">'+fincas[i].childNodes[7].textContent+'</h1></a>'
-                + '            <h4 id="firstHeading" class="firstHeading">'+fincas[i].childNodes[13].textContent+'</h4>'
+                + '            <a id="ln" onclick="loadPropiedad('+codi+')"><h1 id="firstHeading" class="firstHeading">'+nom+'</h1></a>'
+                + '            <h4 id="firstHeading" class="firstHeading">'+poblacion+'</h4>'
                 + '            <div id="bodyContent">'
-                + '                <a><img class="img-responsive" src="'+fincas[i].childNodes[9].childNodes[1].textContent+'" style="width:100%; max-width:400px;">'
+                + '                <a id="ln" onclick="loadPropiedad('+codi+')"><img class="img-responsive" src="'+url+'" style="width:100%; max-width:400px;">'
                 + '                </img></a>'
-                + '                <p style="margin-top:20px">'+fincas[i].childNodes[11].textContent+'</p>'
+                + '                <p style="margin-top:20px">'+des+'</p>'
                 + '            </div>'
                 + '        </div>';
         addmarker(myLatlng, info, last, map);
