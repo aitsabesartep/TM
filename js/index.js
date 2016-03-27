@@ -118,10 +118,14 @@ function initCalendaris() {
 */
 
 function initCalendaris(){
-    var from_$input = $('#from').pickadate(),
+    var from_$input = $('#from').pickadate({
+        format: 'd/mm/yyyy'
+    }),
         from_picker = from_$input.pickadate('picker')
 
-    var to_$input = $('#to').pickadate(),
+    var to_$input = $('#to').pickadate({
+        format: 'dd/mm/yyyy'
+    }),
         to_picker = to_$input.pickadate('picker')
 
 
