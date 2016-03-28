@@ -145,3 +145,14 @@ th#mes {
 }
 
 .hidden { display: none; }
+
+div#recuadre{
+	padding: 15px;
+	border-radius: 15px;
+	background-color: rgb(235, 237, 237);
+}
+
+h4#datos_reserva{
+	color: #337AB7;
+	margin-top: 0px;
+}

@@ -190,41 +190,38 @@
                         <input id="date-range12" size="40" value=""/>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-6 col-lg-offset-0">
                     <div id="pagament" class="hidden" style="margin-top: 25px; padding: 10px;">
                             <form class="form-horizontal" role="form" method="post" action="reserva.php">
-                                <h4>Datos reserva</h4>
-                                <div class="form-group">
-                                    <label for="name" class="col-sm-2 control-label">Nombre</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" value=""></input>
+                                <div id="recuadre">
+                                    <h4 id="datos_reserva">Datos reserva</h4>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido" value=""></input>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="dni" class="col-sm-2 control-label">Teléfono</label>
-                                    <div class="col-sm-4">
-                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="DNI" value=""></input>
+                                    <div class="form-group">
+                                        <div class="col-sm-12 col-sm-6 col-md-6 col-lg-6">
+                                            <input class="form-control" id="dni" name="dni" placeholder="DNI" value=""></input>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sel1" class="col-sm-2 control-label">Personas</label>
-                                    <div class="col-sm-4">
-                                        <select id="sel1" class="form-control" value="3">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <input id="entrada" class="form-control data_fincas" name="dni" readonly="true" placeholder="Entrada" value=""></input>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <input id="salida" class="form-control data_fincas" name="dni" readonly="true" placeholder="Salida" value=""></input>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message" class="col-sm-2 control-label">Mensaje</label>
-                                    <div class="col-sm-10">
-                                        <textarea class="form-control" rows="4" name="message"></textarea>
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <textarea class="form-control" rows="4" placeholder="Comentarios" name="message"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-10 col-sm-offset-2">
-                                        <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-primary"></input>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <button style="width:100%;" class="btn btn-primary">Reservar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>

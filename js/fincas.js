@@ -5,7 +5,6 @@ function loadPropiedad(codi){
             $("#cos").html(xhttp.responseText);
             actualitzarMenu(1);
             initPropiedad(codi);
-            initCalendaris();
         }
     };
     var str = 'php/propiedad.php?codi='+codi;

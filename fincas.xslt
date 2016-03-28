@@ -5,34 +5,45 @@
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
                 <div class="row">
                     <div id="filter-panel" class="collapse filter-panel">
-                        <div class="panel panel-default">
+                        <div id="filterpanel" class="panel panel-default">
                             <div class="panel-body">
                                 <form class="form-inline" role="form">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                             <div >
                                                 <h5>Fechas</h5>
-                                                <row>
+                                                <div class="row">
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                         <div id="entrada" class="calendari_fincas">
-                                                            <div class="form-group" style="width:100%; margin-top:7px">
-                                                                <div class="input-group" style="width:100%">
-                                                                   <span class="input-group-addon" role="button"><i class="glyphicon glyphicon-calendar" style="width: 100%"></i></span>
-                                                                   <input id="from" class="form-control" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
+                                                            <div class="form-group max">
+                                                                <div id="data" class="input-group max">
+                                                                   <span class="input-group-addon data_fincas" role="button"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                                   <input id="from" class="form-control data_fincas" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
                                                                 </div>
-                                                                <div class="input-group" style="width:100%">
-                                                                   <span class="input-group-addon" role="button"><i class="glyphicon glyphicon-calendar" style="width: 100%"></i></span>
-                                                                   <input id="from" class="form-control" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
+                                                                <div id="data" class="input-group max">
+                                                                   <span class="input-group-addon data_fincas" role="button"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                                   <input id="to" class="form-control data_fincas" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
+                                                                </div>
+                                                                <div id="data" class="input-group max">
+                                                                    <div class="form-group carac">
+                                                                        <select class="form-control sel_fincas1" id="sel1">
+                                                                            <option>Precio por noche</option>
+                                                                            <option>Menos de 150€</option>
+                                                                            <option>150€ - 200€</option>
+                                                                            <option>200€ - 250€</option>
+                                                                            <option>Más de 250€</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </row>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                             <h5>Características</h5>
-                                            <row>
+                                            <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                     <div class="form-group carac">
                                                         <select class="form-control sel_fincas" id="sel1">
@@ -64,13 +75,13 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </row>
+                                            </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="col_mobiliari">
                                             <h5>Mobiliario</h5>
                                             <div id="recuadre_serveis">
                                                 <div class="row" style="margin-left:8px; padding-top:8px; padding-bottom:8px;">
-                                                    <table style="width:100%">
+                                                    <table class="max">
                                                         <tr>
                                                             <td>
                                                                 <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
@@ -121,6 +132,13 @@
                                                         </tr>
                                                     </table>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-2 col-md-offset-10 col-lg-offset-10 col-lg-2">
+                                            <div class="form-group input-group max">
+                                               <button id="boto_filtrar" class="btn btn-default max">
+                                                 <span class="glyphicon glyphicon-search"></span>  Filtrar
+                                               </button>
                                             </div>
                                         </div>
                                     </div>

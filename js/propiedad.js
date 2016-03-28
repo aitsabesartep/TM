@@ -1,7 +1,7 @@
 function initCal(d)
 {
     var dies = d;
-    $('#date-range12').dateRangePicker({
+    var date_range = $('#date-range12').dateRangePicker({
         inline:true,
         customTopBar: 'Seleccione el dia de entrada y salida',
         container: '#content',
@@ -9,6 +9,8 @@ function initCal(d)
         startOfWeek: 'monday',
         language: 'es',
         alwaysOpen:true,
+        format: 'DD/MM/YYYY',
+        separator : '#',
         beforeShowDay: function(t)
         {
             //Comprovar dies ja seleccionats
@@ -30,7 +32,10 @@ function initCal(d)
     })
     .bind('datepicker-change',function(event,obj)
     {
+        var str = $('#date-range12').val();
         $('#pagament').removeClass('hidden');
+        $('#entrada').val(str.substr(0, str.indexOf("#")));
+        $('#salida').val(str.substr(str.indexOf("#")+1), str.length);
     });
 }
 

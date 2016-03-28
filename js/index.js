@@ -27,6 +27,7 @@ function loadFincas(){
             $("#cos").html(xhttp.responseText);
             removeIndex();
             actualitzarMenu(1);
+            initCalendaris();
         }
     };
   xhttp.open("GET", "php/fincas.php", true);
