@@ -29,6 +29,7 @@ div#preu{
 img#img_finca{
   border-radius: 10px;
 }
+
 div#preu{
   margin-top: 0px;
   border-radius: 10px;
@@ -132,4 +133,38 @@ div#filter-panel{
 
 .mouse_select{
   cursor: pointer;
+}
+
+div#recuadre_serveis{
+  border-color: #ccc;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 14px !important;
+}
+
+ .serveis_fincas{
+  margin: 3px !important;
+ }
+
+.carac{
+  width: 100%;
+}
+
+.sel_fincas{
+  width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div#carac_finques{
+  height: 100% !important;
+}
+
+.calendari_fincas{
+  width: 100%;
+}
+
+div#element1{
+  width: 100%;
 }

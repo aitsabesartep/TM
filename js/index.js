@@ -119,7 +119,7 @@ function initCalendaris() {
 
 function initCalendaris(){
     var from_$input = $('#from').pickadate({
-        format: 'd/mm/yyyy'
+        format: 'dd/mm/yyyy'
     }),
         from_picker = from_$input.pickadate('picker')
 

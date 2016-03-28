@@ -1,9 +1,3 @@
-$( document ).ready(function() {
-    $("#filtro").click(function(){
-    	$("#target").toggle();
-	});
-});
-
 function loadPropiedad(codi){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -11,9 +5,11 @@ function loadPropiedad(codi){
             $("#cos").html(xhttp.responseText);
             actualitzarMenu(1);
             initPropiedad(codi);
+            initCalendaris();
         }
     };
     var str = 'php/propiedad.php?codi='+codi;
 	xhttp.open("GET", str, true);
 	xhttp.send();
 }
+

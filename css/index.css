@@ -16,6 +16,28 @@ div#principal{
   border-radius: 15px
 }
 
+@media (max-width: 700px) and (orientation: landscape) {
+  div#principal{
+    background: rgba(255, 166, 0, 0.7)!important;
+    height: 100%;
+    max-width: 60%;
+    display: table;
+    margin-top: 100px;
+    border-radius: 15px
+  }
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+  div#principal{
+    background: rgba(255, 166, 0, 0.7)!important;
+    height: 100%;
+    max-width: 60%;
+    display: table;
+    margin-top: 75px;
+    border-radius: 15px
+  }
+}
+
 form#menu{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -27,7 +49,7 @@ div#element{
   width: 140px;
 }
 
-.input-group{
+.calendariinici{
   min-width: 100px;
   max-width: 140px;
 }

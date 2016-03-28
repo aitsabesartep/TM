@@ -2,63 +2,136 @@
 <xsl:template match="/">
     <div id="cos_fincas" class="container">
         <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
-                    <div class="row">
-                        <div id="filter-panel" class="collapse filter-panel">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <form class="form-inline" role="form">
-                                        <div class="form-group">
-                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage">Rows per page:</label>
-                                            <select id="pref-perpage" class="form-control">
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option selected="selected" value="10">10</option>
-                                                <option value="15">15</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                                <option value="40">40</option>
-                                                <option value="50">50</option>
-                                                <option value="100">100</option>
-                                                <option value="200">200</option>
-                                                <option value="300">300</option>
-                                                <option value="400">400</option>
-                                                <option value="500">500</option>
-                                                <option value="1000">1000</option>
-                                            </select>                                
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="filter-col" style="margin-right:0;" for="pref-search">Search:</label>
-                                            <input type="text" class="form-control input-sm" id="pref-search"/>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="filter-col" style="margin-right:0;" for="pref-orderby">Order by:</label>
-                                            <select id="pref-orderby" class="form-control">
-                                                <option>Descendent</option>
-                                            </select>                                
-                                        </div> 
-                                        <div class="form-group">    
-                                            <div class="checkbox" style="margin-left:10px; margin-right:10px;">
-                                                <label><input type="checkbox"/> Remember parameters</label>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-12">
+                <div class="row">
+                    <div id="filter-panel" class="collapse filter-panel">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form class="form-inline" role="form">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                            <div >
+                                                <h5>Fechas</h5>
+                                                <row>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div id="entrada" class="calendari_fincas">
+                                                            <div class="form-group" style="width:100%; margin-top:7px">
+                                                                <div class="input-group" style="width:100%">
+                                                                   <span class="input-group-addon" role="button"><i class="glyphicon glyphicon-calendar" style="width: 100%"></i></span>
+                                                                   <input id="from" class="form-control" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
+                                                                </div>
+                                                                <div class="input-group" style="width:100%">
+                                                                   <span class="input-group-addon" role="button"><i class="glyphicon glyphicon-calendar" style="width: 100%"></i></span>
+                                                                   <input id="from" class="form-control" role="button" name='salida' placeholder="Dia entrada" readonly="true"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </row>
                                             </div>
-                                            <button type="submit" class="btn btn-default filter-col">
-                                                <span class="glyphicon glyphicon-record"></span> Save Settings
-                                            </button>  
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                            <h5>Características</h5>
+                                            <row>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group carac">
+                                                        <select class="form-control sel_fincas" id="sel1">
+                                                            <option>Nº Personas</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group carac">
+                                                        <select class="form-control sel_fincas" id="sel2">
+                                                            <option>Tipo</option>
+                                                            <option>Finca</option>
+                                                            <option>Casa</option>
+                                                            <option>Apartamento</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group carac">
+                                                        <select class="form-control sel_fincas" id="sel3">
+                                                            <option>Población</option>
+                                                            <option>Petra</option>
+                                                            <option>Sineu</option>
+                                                            <option>Manacor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </row>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="col_mobiliari">
+                                            <h5>Mobiliario</h5>
+                                            <div id="recuadre_serveis">
+                                                <div class="row" style="margin-left:8px; padding-top:8px; padding-bottom:8px;">
+                                                    <table style="width:100%">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Piscina</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Wifi</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> TV</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Yacuzzi</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Mar</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Admiten perros</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Barbacoa</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox serveis_fincas" style="margin-left:10px; margin-right:10px;">
+                                                                    <label><input type="checkbox"/> Aire acond.</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </div>    
-                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel">
-                            <span class="glyphicon glyphicon-filter"></span> Filtros
-                        </button>
+                        </div>
                     </div>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel">
+                        <span class="glyphicon glyphicon-filter"></span> Filtros
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -100,12 +173,8 @@
                   <ul id="caracteristiques">
                     <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
                     <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
+                    <li><p>Nº Habitaciones: <xsl:value-of select="num_habitaciones"/></p></li>
                     <li><p>Casa: <xsl:value-of select="metros_casa"/> m<sup>2</sup></p></li>
-                    <xsl:choose>
-                        <xsl:when test="tipo/finc=1">
-                            <li><p>Terreno: <xsl:value-of select="metros_terreno"/> m<sup>2</sup></p></li>
-                        </xsl:when>
-                    </xsl:choose>
                     <li><p><xsl:value-of select="servicios/*[1]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
                     <li><p><xsl:value-of select="servicios/*[2]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
                     <li><p><xsl:value-of select="servicios/*[3]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
