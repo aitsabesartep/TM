@@ -31,7 +31,7 @@
                             <h4><xsl:value-of select="poblacion"/></h4>
                             <hr></hr>
                         </div>
-                        <div id="contignut_dreta_in" class="col-xs-7 col-sm-7 col-md-12 col-lg-12">
+                        <div id="contignut_dreta_in" class="col-xs-6 col-sm-7 col-md-12 col-lg-12">
                           <ul id="lista">
                             <li><p>Capacidad personas: <xsl:value-of select="capacidad_personas"/></p></li>
                             <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
@@ -43,11 +43,17 @@
                             </xsl:choose>
                           </ul>
                         </div>
-                        <div id="contignut_dreta_in" class="col-xs-5 col-sm-5 col-md-12 col-lg-12">
+                        <div id="contignut_dreta_in" class="col-xs-6 col-sm-5 col-md-12 col-lg-12">
                             <ul id="lista">
-                                <li><p><xsl:value-of select="servicios/*[1]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
-                                <li><p><xsl:value-of select="servicios/*[2]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
-                                <li><p><xsl:value-of select="servicios/*[3]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
+                                <xsl:call-template name="caracter">
+                                    <xsl:with-param name="param" select="servicios/*[1]"/>
+                                </xsl:call-template>
+                                <xsl:call-template name="caracter">
+                                    <xsl:with-param name="param" select="servicios/*[2]"/>
+                                </xsl:call-template>
+                                <xsl:call-template name="caracter">
+                                    <xsl:with-param name="param" select="servicios/*[3]"/>
+                                </xsl:call-template>
                             </ul>
                         </div>
                     </div>                    
@@ -264,6 +270,49 @@
             </div>
         </li>
         <hr></hr>
+    </xsl:template>
+
+
+    <xsl:template name="caracter">
+        <xsl:param name="param" />
+        <li>
+            <div id="carac"><span class="glyphicon"><img id="icon_carac">
+                <xsl:choose>
+                    <xsl:when test='$param="Internet"'>
+                        <xsl:attribute name="src">
+                            img/icon/wifi.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Piscina"'>
+                        <xsl:attribute name="src">
+                            img/icon/pool.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Barbacoa"'>
+                        <xsl:attribute name="src">
+                            img/icon/barbacoa.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="TV"'>
+                        <xsl:attribute name="src">
+                            img/icon/tv.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Sauna"'>
+                        <xsl:attribute name="src">
+                            img/icon/sauna.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Lavadora"'>
+                        <xsl:attribute name="src">
+                            img/icon/lavadora.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                </xsl:choose>
+                </img>
+            </span><p id="carac">&#160;
+            <xsl:value-of select="$param"/></p></div>
+        </li>
     </xsl:template>
 
 </xsl:stylesheet>

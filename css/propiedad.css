@@ -163,3 +163,16 @@ h4#datos_reserva{
     text-align: center;	
 	color: #337AB7;
 }
+
+img#icon_carac{
+	max-width: 18px;
+	max-height: 18px;
+}
+
+p#carac{
+	margin-top: 3px;
+}
+
+div#carac{
+	display: flex;
+}

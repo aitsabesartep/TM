@@ -221,7 +221,7 @@ function actualitzar(name, rate, opinio){
             '</div>'+
         '</li><hr></hr>');
 
-    //
+    //Iniciam les estrelles del nou calendari
     $('.est_comment_add').rating({
         min:0,
         max:5,
@@ -237,7 +237,6 @@ function actualitzar(name, rate, opinio){
     $('#opinio').val("");
     $("#comentari").html('<h3 class="gracias">Gracias por tu comentario</>');
 }   
-
 
 function mitjaVal(xml, codi){
     var mitja = 0;
