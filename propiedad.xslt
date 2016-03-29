@@ -53,9 +53,8 @@
                     </div>                    
                     <div id="" class="row">
                         <div id="contingut_dreta_preu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div id ="estrelles">
+                            <div id="estrelles">
                                 <h4 id="val">Valoración usuarios</h4>
-                                <input id="input-id" value="4"></input>
                             </div>
                         </div>
                     </div>
@@ -141,13 +140,13 @@
                     <div class="row">
                         <div id="fins" class="col-xs-12 col-sm-12 col-md-7 col-md-offset-0 col-lg-offset-0 col-lg-7">
                             <div id="scr">
-                                <ul id="lista" class="media-list">
+                                <ul id="lista1" class="media-list">
                                     <xsl:apply-templates select="comentarios/comentario"/>
                                 </ul>
                             </div>
                         </div>
                         <div id="comentari" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <form class="form-horizontal" role="form" action="php/savecoment.php">
+                            <form class="form-horizontal" method="GET" onsubmit="return submitdata();">
                                 <input type="hidden" name="codigo">
                                     <xsl:attribute name="value"><xsl:value-of select="codi"/></xsl:attribute>
                                 </input>
@@ -168,12 +167,12 @@
                                 <div class="form-group">
                                     <label for="message" class="col-sm-2 control-label">Mensaje</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" rows="4" name="opinio"></textarea>
+                                        <textarea id="opinio" class="form-control" rows="4" name="opinio"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10 col-sm-offset-2">
-                                        <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-primary"></input>
+                                        <input type="submit" name="submit_form" class="btn btn-primary" value="Enviar"></input>
                                     </div>
                                 </div>
                             </form>

@@ -60,6 +60,10 @@ ul#lista{
 	padding: 0px;
 	list-style-type: none;
 }
+ul#lista1{
+	padding: 0px;
+	list-style-type: none;
+}
 
 div#descripcio{
 	margin-top: 10px;
@@ -121,10 +125,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-ul#lista{
-	padding: 0px;
-}
-
 li#coment{
 	margin-top: 0px;
 }
@@ -155,4 +155,11 @@ div#recuadre{
 h4#datos_reserva{
 	color: #337AB7;
 	margin-top: 0px;
+}
+
+.gracias{
+	margin-top: 20px;
+	margin-bottom: 20px;
+    text-align: center;	
+	color: #337AB7;
 }

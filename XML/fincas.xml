@@ -70,6 +70,12 @@
         <any>2016</any>
         <ndias>10</ndias>
       </registre>
+      <registre>
+        <dia>26</dia>
+        <mes>12</mes>
+        <any>2016</any>
+        <ndias>10</ndias>
+      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -85,7 +91,87 @@
       <noviembre>80</noviembre>
       <diciembre>80</diciembre>
     </precio>
-    <comentarios><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>5</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>2</valoracion></comentario><comentario><name>Joan</name><opinion>good job!</opinion><valoracion>3</valoracion></comentario>1
+    <comentarios>
+      <comentario>
+        <name>Comentari1</name>
+        <opinion>Malo</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsaf</name>
+        <opinion>dsfad</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>fsdfa</name>
+        <opinion>faffffff</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+      <comentario>
+        <name>merda</name>
+        <opinion>strelles</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
+      <comentario>
+        <name>arasia</name>
+        <opinion>rasiiii</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
+      <comentario>
+        <name>arasi que vabe</name>
+        <opinion>es comentari</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>dsafdsafdsa</name>
+        <opinion>dsafsdafas</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+      <comentario>
+        <name>Comentarifds</name>
+        <opinion>fadfsaf</opinion>
+        <valoracion>1</valoracion>
+      </comentario>
+      <comentario>
+        <name>ddasdasdas</name>
+        <opinion>dasadsa</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>pr</name>
+        <opinion>fsdafsd</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>dsfaasdfasdfas</name>
+        <opinion>aaaaaasssss</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsafsa</name>
+        <opinion>olllalsas</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsafas</name>
+        <opinion>dsfa</opinion>
+        <valoracion>3</valoracion>
+      </comentario>
+      <comentario>
+        <name>fsdafas</name>
+        <opinion>dfasfd</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>fsfa</name>
+        <opinion>fdsaf</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>dsafsa</name>
+        <opinion>dsafsf</opinion>
+        <valoracion>4</valoracion>
+      </comentario>
     </comentarios>
   </finca>
   <finca>
@@ -158,6 +244,11 @@
         <name>Tià</name>
         <opinion>Gooood experience!! Incredible!</opinion>
         <valoracion>4</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsafsda</name>
+        <opinion>sdafsdf</opinion>
+        <valoracion>3</valoracion>
       </comentario>
     </comentarios>
   </finca>
@@ -237,6 +328,16 @@
         <name>Sergi</name>
         <opinion>Excelente Finca!</opinion>
         <valoracion>3</valoracion>
+      </comentario>
+      <comentario>
+        <name>ja no refresca</name>
+        <opinion>ajax</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>sebstia</name>
+        <opinion>fdsfadfa</opinion>
+        <valoracion>4</valoracion>
       </comentario>
     </comentarios>
   </finca>
@@ -324,6 +425,31 @@
       <diciembre>80</diciembre>
     </precio>
     <comentarios>
+      <comentario>
+        <name>Noel</name>
+        <opinion>Una passada!</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>Uou</name>
+        <opinion>dsada</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
+      <comentario>
+        <name>fsdadfsad</name>
+        <opinion>fdsfafsa</opinion>
+        <valoracion>1</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsfsa</name>
+        <opinion>fdsaf</opinion>
+        <valoracion>2</valoracion>
+      </comentario>
+      <comentario>
+        <name>fdsafaa</name>
+        <opinion>fsdafs</opinion>
+        <valoracion>5</valoracion>
+      </comentario>
     </comentarios>
   </finca>
 </fincas>

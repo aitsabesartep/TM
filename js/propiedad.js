@@ -1,3 +1,4 @@
+var codi_finca;
 function initCal(d)
 {
     var dies = d;
@@ -116,6 +117,7 @@ function cal(codi) {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             pintarCalendari(xhttp, codi);
+            mitjaVal(xhttp, codi);
             initCal(dies);
         }
     };
@@ -123,13 +125,14 @@ function cal(codi) {
     xhttp.send();
 }
 
-function initPropiedad(codi){
+function initPropiedad(c){
+    codi_finca = c;
     initStar();
     initFlex();
-    cal(codi);
+    cal(c);
     $('#preu').click(function() {
-    $("html, body").animate({ scrollTop: $('#date-range12').offset().top }, 1000);
- });
+        $("html, body").animate({ scrollTop: $('#date-range12').offset().top }, 1000);
+    });
 }
 
 function initFlex(){
@@ -166,17 +169,6 @@ function initFlex(){
 
 function initStar(){
 
-    $("#input-id").rating({
-        min:0,
-        max:5,
-        step:0.5,
-        size:'sm', 
-        stars:5,
-        readonly: true,
-        showClear: false,
-        showCaption: false
-    });
-
     $(".est_comment").rating({
         min:0,
         max:5,
@@ -197,3 +189,103 @@ function initStar(){
         showCaption: false
     });
 }
+
+function submitdata()
+{
+    var name = $('#name').val();
+    var rate = $('#input-id2').val();
+    var opinio = $('#opinio').val();
+    var dataString = 'nom='+ name + '&valor=' + rate + '&opinio=' + opinio+'&codigo='+codi_finca;
+
+    $.ajax({
+        type: 'get',
+        url: 'php/savecoment.php',
+        data: dataString,
+        success: function (response) {
+            //Quan hem escrit correctament es comentari
+            actualitzar(name, rate, opinio);
+        }   
+    });
+    //Retornam null xq sa web no actualitzi
+    return false;
+}
+
+function actualitzar(name, rate, opinio){
+    //Ficam es nou comentari a sa llista
+    $('#lista1').append('<li id="coment" class="media">'+
+            '<div id="cm" class="media-body">'+
+                '<h4 id="nom_comment" class="media-heading">'+name+'</h4>'+
+                '<p>'+opinio+'</p>'+
+                '<input class="est_comment_add" value="'+rate+'"></input>'+
+                '</input>'+
+            '</div>'+
+        '</li><hr></hr>');
+
+    //
+    $('.est_comment_add').rating({
+        min:0,
+        max:5,
+        step:1,
+        size:'xs', 
+        stars:5,
+        showClear: false,
+        showCaption: false
+    });
+
+    $('#name').val("");
+    $('#input-id2').val("0");
+    $('#opinio').val("");
+    $("#comentari").html('<h3 class="gracias">Gracias por tu comentario</>');
+}   
+
+
+function mitjaVal(xml, codi){
+    var mitja = 0;
+    var contador = 0;
+    var xmlDoc = xml.responseXML;
+    var fincas = xmlDoc.getElementsByTagName("finca");
+    var finca;
+    var i;
+
+    for (i = 0; i < fincas.length; i++) {
+        if (parseInt(fincas[i].getElementsByTagName('codi')[0].textContent) == codi) {
+            finca = fincas[i];
+            break
+        }
+    }
+    var comentarios = (finca.getElementsByTagName('comentarios')[0]);
+    var comentario = comentarios.getElementsByTagName('comentario');
+
+    if (comentario.length == 0) {
+        $('#estrelles').append('<input id="input-id" value="0"></input>');
+        $("#input-id").rating({
+            min:0,
+            max:5,
+            step:0.5,
+            size:'sm', 
+            stars:5,
+            readonly: true,
+            showClear: false,
+            showCaption: false
+        });
+        return;
+    }
+
+    for (i = 0; i < comentario.length; i++) {
+        var val = parseInt(comentario[i].getElementsByTagName('valoracion')[0].textContent);
+        mitja = mitja + val;
+        contador = contador + 1;
+    }
+    mitja = mitja/contador;
+    $('#estrelles').append('<input id="input-id" value="'+mitja+'"></input>');
+    $("#input-id").rating({
+        min:0,
+        max:5,
+        step:0.5,
+        size:'sm', 
+        stars:5,
+        readonly: true,
+        showClear: false,
+        showCaption: false
+    });
+}             
