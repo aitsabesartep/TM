@@ -147,7 +147,10 @@
                             </div>
                         </div>
                         <div id="comentari" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <form class="form-horizontal" role="form" method="post" action="php/savecoment.php">
+                            <form class="form-horizontal" role="form" action="php/savecoment.php">
+                                <input type="hidden" name="codigo">
+                                    <xsl:attribute name="value"><xsl:value-of select="codi"/></xsl:attribute>
+                                </input>
                                 <h4>Déjanos tu comentario</h4>
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label">Name</label>
@@ -158,7 +161,8 @@
                                 <div class="form-group">
                                     <label for="email" class="col-sm-2 control-label">Rating</label>
                                     <div class="col-sm-10">
-                                        <input id="input-id2" value="3" name="valor"></input>
+                                        <input id="input-id2" name="valor">
+                                        </input>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -192,8 +196,17 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-6 col-lg-offset-0">
                     <div id="pagament" class="hidden" style="margin-top: 25px; padding: 10px;">
-                            <form class="form-horizontal" role="form" method="post" action="reserva.php">
+                            <form class="form-horizontal" role="form" action="php/saveday.php">
                                 <div id="recuadre">
+                                    <input type="hidden" name="codigo">
+                                    <xsl:attribute name="value"><xsl:value-of select="codi"/></xsl:attribute>
+                                    </input>
+                                    <input id="i1" type="hidden" name="d"></input>
+                                    <input id="i2" type="hidden" name="m" value=""></input>
+                                    <input id="i3" type="hidden" name="a" value=""></input>
+                                    <input id="i4" type="hidden" name="nd" value=""></input>
+
+
                                     <h4 id="datos_reserva">Datos reserva</h4>
                                     <div class="form-group">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

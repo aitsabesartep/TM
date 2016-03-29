@@ -3,7 +3,7 @@
 <!DOCTYPE fincas SYSTEM "xml/finca.dtd">
 <fincas>
   <finca>
-    <codi>1</codi>
+    <codi>0</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
       <finc/>
@@ -89,7 +89,7 @@
     </comentarios>
   </finca>
   <finca>
-    <codi>2</codi>
+    <codi>1</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
       <finc>1</finc>
@@ -138,12 +138,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia/>
-        <mes/>
-        <any/>
-        <ndias/>
-      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -165,15 +159,10 @@
         <opinion>Gooood experience!! Incredible!</opinion>
         <valoracion>4</valoracion>
       </comentario>
-      <comentario>
-        <name/>
-        <opinion/>
-        <valoracion/>
-      </comentario>
     </comentarios>
   </finca>
   <finca>
-    <codi>3</codi>
+    <codi>2</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
       <finc/>
@@ -228,12 +217,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia/>
-        <mes/>
-        <any/>
-        <ndias/>
-      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -258,7 +241,7 @@
     </comentarios>
   </finca>
   <finca>
-    <codi>4</codi>
+    <codi>3</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
       <finc/>
@@ -340,5 +323,7 @@
       <noviembre>80</noviembre>
       <diciembre>80</diciembre>
     </precio>
+    <comentarios>
+    </comentarios>
   </finca>
 </fincas>

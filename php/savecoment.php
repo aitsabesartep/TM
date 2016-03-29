@@ -1,6 +1,7 @@
 <?php
     $fincas = simplexml_load_file("../xml/fincas.xml");
-    $finca = $fincas->finca[1]->comentarios->addChild('comentario');
+    $var = (int) $_GET['codigo'];
+    $finca = $fincas->finca[$var]->comentarios->addChild('comentario');
     $finca->addChild('name', $_GET['nom']);
     $finca->addChild('opinion', $_GET['opinio']);
     $finca->addChild('valoracion', $_GET['valor']);
@@ -10,6 +11,8 @@
     $dom->loadXML($fincas->asXML());
     $dom->saveXML();
     $dom->save('../xml/fincas.xml');
+
+    //Falta refrescar pagina
 ?>
 
 
