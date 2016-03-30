@@ -6,9 +6,7 @@
     <codi>0</codi>
     <codi_propietari>1</codi_propietari>
     <tipo>
-      <finc/>
       <casa>1</casa>
-      <apartamento/>
     </tipo>
     <nombre>Oasis</nombre>
     <imagenes>
@@ -28,14 +26,20 @@
       <url>img/img_fincas/oasis/img13.jpg</url>
       <url>img/img_fincas/oasis/img14.jpg</url>
       <url>img/img_fincas/oasis/img15.jpg</url>
-      <url>img/img_fincas/oasis/img16.jpg</url>
-      <url>img/img_fincas/oasis/img17.jpg</url>
     </imagenes>
-    <descripcion>Finca situada en las afueras de Santa Eugènia, pueblo muy tranquilo y bonito. La casa tiene mucho terreno para disfrutar de la naturaleza, realizar excursiones.</descripcion>
+    <descripcion>
+      La propiedad es del siglo XI y desde el siglo XV es propiedad de la misma familia, y es de momento una de las pocas propiedades de ese tamaño que están disponibles exclusivamente en el mercado.
+
+      El terreno con 2.882,9 hectáreas a los pies de Tramuntana cerca de Caimairi-Binibona en la comunidad de Selva incluye varias superficies de uso agrícola así como la histórica propiedad con más de 2.000 metros cuadrados de superficie habitable total, dividida en varios edificios, terrazas y piscina, así como una residencia privada e independiente de 400 metros cuadrados. 
+
+      El terreno puede funcionar lucrativamente o ser usado como un idilio muy privado en Mallorca. 
+
+      Las vistas y el entorno son soñados, usted entra en un mundo de antaño, en el que los secretos de las generaciones están firmemente anclados en los gruesos muros de piedra que lo componen. Cruce el patio adoquinado pasando por las fuentes medievales y admire las Almanzaras (2 prensas de aceite están disponibles) y descubra una sensación de vida nueva y original en la isla.
+    </descripcion>
     <poblacion>Santa Eugènia</poblacion>
     <coordenadas>
-      <longitud>2.8864253</longitud>
-      <latitud>39.6130537</latitud>
+      <longitud>2.847707</longitud>
+      <latitud>39.618571</latitud>
     </coordenadas>
     <capacidad_personas>12</capacidad_personas>
     <metros_casa>300</metros_casa>
@@ -44,7 +48,7 @@
     <num_banyos>8</num_banyos>
     <servicios>
       <piscina>Piscina</piscina>
-      <lavadora>Lavadora</lavadora>
+      <climatizacion>Climatizacion</climatizacion>
       <barbacoa>Barbacoa</barbacoa>
       <cocina>
         <tostadora>1</tostadora>
@@ -58,36 +62,6 @@
       <salida>10:00</salida>
     </hora>
     <calendario>
-      <registre>
-        <dia>26</dia>
-        <mes>5</mes>
-        <any>2016</any>
-        <ndias>10</ndias>
-      </registre>
-      <registre>
-        <dia>26</dia>
-        <mes>6</mes>
-        <any>2016</any>
-        <ndias>10</ndias>
-      </registre>
-      <registre>
-        <dia>26</dia>
-        <mes>12</mes>
-        <any>2016</any>
-        <ndias>10</ndias>
-      </registre>
-      <registre>
-        <dia>5</dia>
-        <mes>4</mes>
-        <any>2016</any>
-        <ndias>17</ndias>
-      </registre>
-      <registre>
-        <dia>1</dia>
-        <mes>3</mes>
-        <any>2016</any>
-        <ndias>10</ndias>
-      </registre>
     </calendario>
     <precio>
       <enero>80</enero>
@@ -104,91 +78,6 @@
       <diciembre>80</diciembre>
     </precio>
     <comentarios>
-      <comentario>
-        <name>Comentari1</name>
-        <opinion>Malo</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsaf</name>
-        <opinion>dsfad</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>fsdfa</name>
-        <opinion>faffffff</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-      <comentario>
-        <name>merda</name>
-        <opinion>strelles</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>arasia</name>
-        <opinion>rasiiii</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>arasi que vabe</name>
-        <opinion>es comentari</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>dsafdsafdsa</name>
-        <opinion>dsafsdafas</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-      <comentario>
-        <name>Comentarifds</name>
-        <opinion>fadfsaf</opinion>
-        <valoracion>1</valoracion>
-      </comentario>
-      <comentario>
-        <name>ddasdasdas</name>
-        <opinion>dasadsa</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>pr</name>
-        <opinion>fsdafsd</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
-      <comentario>
-        <name>dsfaasdfasdfas</name>
-        <opinion>aaaaaasssss</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsafsa</name>
-        <opinion>olllalsas</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsafas</name>
-        <opinion>dsfa</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-      <comentario>
-        <name>fsdafas</name>
-        <opinion>dfasfd</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>fsfa</name>
-        <opinion>fdsaf</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>dsafsa</name>
-        <opinion>dsafsf</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>dasdas</name>
-        <opinion>dsada</opinion>
-        <valoracion>0</valoracion>
-      </comentario>
     </comentarios>
   </finca>
   <finca>
@@ -197,310 +86,90 @@
     <tipo>
       <finc>1</finc>
       <casa>1</casa>
-      <apartamento/>
+      <apartamento></apartamento>
     </tipo>
-    <nombre>Palacio</nombre>
+    <nombre>Casa del Mar</nombre>
     <imagenes>
-      <url>img/img_fincas/palacio/img0.jpg</url>
-      <url>img/img_fincas/palacio/img1.jpg</url>
-      <url>img/img_fincas/palacio/img2.jpg</url>
-      <url>img/img_fincas/palacio/img3.jpg</url>
-      <url>img/img_fincas/palacio/img4.jpg</url>
-      <url>img/img_fincas/palacio/img5.jpg</url>
-      <url>img/img_fincas/palacio/img6.jpg</url>
-      <url>img/img_fincas/palacio/img7.jpg</url>
-      <url>img/img_fincas/palacio/img8.jpg</url>
-      <url>img/img_fincas/palacio/img9.jpg</url>
-      <url>img/img_fincas/palacio/img10.jpg</url>
-      <url>img/img_fincas/palacio/img11.jpg</url>
-      <url>img/img_fincas/palacio/img12.jpg</url>
-      <url>img/img_fincas/palacio/img13.jpg</url>
-      <url>img/img_fincas/palacio/img14.jpg</url>
-      <url>img/img_fincas/palacio/img15.jpg</url>
-      <url>img/img_fincas/palacio/img16.jpg</url>
-      <url>img/img_fincas/palacio/img17.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img0.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img1.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img2.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img3.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img4.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img5.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img6.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img7.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img8.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img9.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img10.jpg</url>
+      <url>img/img_fincas/Casa_Del_Mar/img11.jpg</url>
     </imagenes>
-    <descripcion>Casa muy grande situada en las afueras de Petra, a tan solo 20 minutos de la playa. Es el mejor pueblo de Mallorca, por sus habitantes</descripcion>
-    <poblacion>Petra</poblacion>
+    <descripcion>
+      Esta finca espaciosa con vistas al mar está ubicada en Ses Salines (el centro se alcanza a pie) y es idónea para familias grandes. 
+
+      La superficie habitable de aprox. 230 metros cuadrados está dividida en 6 dormitorios, 4 baños, biblioteca, salón, comedor y una cocina. Además, la propiedad ofrece un apartamento de invitados integrado y uno separado, lo que ofrece muchas posibilidades como por ejemplo el alquiler vacacional.
+
+      En el exterior encontramos una piscina preciosa con vistas al jardín así como un establo. 
+
+      Esta finca ofrece todas las comodidades y está equipada con suelos de mármol y calefacción.
+      Lugar y alrededores:
+      Ses Salines es uno de los pueblos más bonitos y antiguos en la costa sureste de Mallorca. La imagen del pueblo se caracteriza por los agradables bares y restaurantes donde mallorquines y turistas toman su café con leche al disfrutar del sol. 
+
+      Es un pueblo típico mallorquín que recibe su nombre de las salinas del tiempo romano. Hasta la fecha se cosecha sal de ellas. Los talayotes, vestigios de un asentamiento prehistórico, también son muy interesantes. 
+
+      Muchas calas pequeñas como la de Cala Llombards y la playas natural de Es Trenc están a pocos minutos en coche. También puede descubrir el paisaje precioso y plano con la bicicleta.
+
+      Este mapa muestra la situación de la propiedad en la visión general. Mallorca. Hemos recopilado una selección de las Playas, Campos de golf, Puertos Deportivos y Restaurantes más atractivos.
+    </descripcion>
+    <poblacion>Son Serra</poblacion>
     <coordenadas>
-      <longitud>3.1139447</longitud>
-      <latitud>39.617201</latitud>
+      <longitud>3.223770</longitud>
+      <latitud>39.737699</latitud>
     </coordenadas>
-    <capacidad_personas>6</capacidad_personas>
-    <metros_casa>150</metros_casa>
-    <metros_terreno>500</metros_terreno>
-    <num_habitaciones>3</num_habitaciones>
-    <num_banyos>2</num_banyos>
+    <capacidad_personas>5</capacidad_personas>
+    <metros_casa>120</metros_casa>
+    <metros_terreno>1300</metros_terreno>
+    <num_habitaciones>4</num_habitaciones>
+    <num_banyos>5</num_banyos>
     <servicios>
       <internet>Internet</internet>
       <piscina>Piscina</piscina>
+      <limpieza></limpieza>
+      <climatizacion></climatizacion>
       <television>TV</television>
-    </servicios>
-    <hora>
-      <entrada>14:00</entrada>
-      <salida>10:00</salida>
-    </hora>
-    <calendario>
-      <registre>
-        <dia/>
-        <mes/>
-        <any/>
-        <ndias/>
-      </registre>
-    </calendario>
-    <precio>
-      <enero>80</enero>
-      <febrero>80</febrero>
-      <marzo>90</marzo>
-      <abril>90</abril>
-      <mayo>100</mayo>
-      <junio>100</junio>
-      <julio>150</julio>
-      <agosto>150</agosto>
-      <septiembre>100</septiembre>
-      <octubre>100</octubre>
-      <noviembre>80</noviembre>
-      <diciembre>80</diciembre>
-    </precio>
-    <comentarios>
-      <comentario>
-        <name>Tià</name>
-        <opinion>Gooood experience!! Incredible!</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsafsda</name>
-        <opinion>sdafsdf</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-    </comentarios>
-  </finca>
-  <finca>
-    <codi>2</codi>
-    <codi_propietari>1</codi_propietari>
-    <tipo>
-      <finc/>
-      <casa>1</casa>
-      <apartamento/>
-    </tipo>
-    <nombre>Oasis</nombre>
-    <imagenes>
-      <url>img/img_fincas/oasis/img0.jpg</url>
-      <url>img/img_fincas/oasis/img1.jpg</url>
-      <url>img/img_fincas/oasis/img2.jpg</url>
-      <url>img/img_fincas/oasis/img3.jpg</url>
-      <url>img/img_fincas/oasis/img4.jpg</url>
-      <url>img/img_fincas/oasis/img5.jpg</url>
-      <url>img/img_fincas/oasis/img6.jpg</url>
-      <url>img/img_fincas/oasis/img7.jpg</url>
-      <url>img/img_fincas/oasis/img8.jpg</url>
-      <url>img/img_fincas/oasis/img9.jpg</url>
-      <url>img/img_fincas/oasis/img10.jpg</url>
-      <url>img/img_fincas/oasis/img11.jpg</url>
-      <url>img/img_fincas/oasis/img12.jpg</url>
-      <url>img/img_fincas/oasis/img13.jpg</url>
-      <url>img/img_fincas/oasis/img14.jpg</url>
-      <url>img/img_fincas/oasis/img15.jpg</url>
-      <url>img/img_fincas/oasis/img16.jpg</url>
-      <url>img/img_fincas/oasis/img17.jpg</url>
-    </imagenes>
-    <descripcion>Finca situada en las afueras...</descripcion>
-    <poblacion>Petra</poblacion>
-    <coordenadas>
-      <longitud>3.096299</longitud>
-      <latitud>39.616598</latitud>
-    </coordenadas>
-    <capacidad_personas>12</capacidad_personas>
-    <metros_casa>300</metros_casa>
-    <metros_terreno>2000</metros_terreno>
-    <num_habitaciones>8</num_habitaciones>
-    <num_banyos>8</num_banyos>
-    <servicios>
-      <piscina>Piscina</piscina>
-      <lavadora>Lavadora</lavadora>
+      <lavadora></lavadora>
       <barbacoa>Barbacoa</barbacoa>
       <cocina>
-        <tostadora>1</tostadora>
-        <horno>1</horno>
-        <nevera/>
-        <congelador/>
+        <tostadora></tostadora>
+        <horno></horno>
+        <lavavajillas></lavavajillas>
+        <cafetera></cafetera>
+        <microondas></microondas>
+        <nevera></nevera>
+        <congelador></congelador>
       </cocina>
     </servicios>
     <hora>
-      <entrada>14:00</entrada>
-      <salida>10:00</salida>
+      <entrada></entrada>
+      <salida></salida>
     </hora>
     <calendario>
-      <registre>
-        <dia>4</dia>
-        <mes>4</mes>
-        <any>2016</any>
-        <ndias>9</ndias>
-      </registre>
     </calendario>
     <precio>
-      <enero>80</enero>
-      <febrero>80</febrero>
-      <marzo>90</marzo>
-      <abril>90</abril>
-      <mayo>100</mayo>
-      <junio>100</junio>
-      <julio>150</julio>
-      <agosto>150</agosto>
-      <septiembre>100</septiembre>
-      <octubre>100</octubre>
-      <noviembre>80</noviembre>
-      <diciembre>80</diciembre>
+      <enero>100</enero>
+      <febrero>110</febrero>
+      <marzo>110</marzo>
+      <abril>150</abril>
+      <mayo>160</mayo>
+      <junio>180</junio>
+      <julio>200</julio>
+      <agosto>200</agosto>
+      <septiembre>180</septiembre>
+      <octubre>160</octubre>
+      <noviembre>150</noviembre>
+      <diciembre>140</diciembre>
     </precio>
     <comentarios>
-      <comentario>
-        <name>Sergi</name>
-        <opinion>Excelente Finca!</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-      <comentario>
-        <name>ja no refresca</name>
-        <opinion>ajax</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>sebstia</name>
-        <opinion>fdsfadfa</opinion>
-        <valoracion>4</valoracion>
-      </comentario>
-      <comentario>
-        <name>dsadas</name>
-        <opinion>dasdas</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
     </comentarios>
   </finca>
-  <finca>
-    <codi>3</codi>
-    <codi_propietari>1</codi_propietari>
-    <tipo>
-      <finc/>
-      <casa>1</casa>
-      <apartamento/>
-    </tipo>
-    <nombre>Oasis</nombre>
-    <imagenes>
-      <url>img/img_fincas/oasis/img0.jpg</url>
-      <url>img/img_fincas/oasis/img1.jpg</url>
-      <url>img/img_fincas/oasis/img2.jpg</url>
-      <url>img/img_fincas/oasis/img3.jpg</url>
-      <url>img/img_fincas/oasis/img4.jpg</url>
-      <url>img/img_fincas/oasis/img5.jpg</url>
-      <url>img/img_fincas/oasis/img6.jpg</url>
-      <url>img/img_fincas/oasis/img7.jpg</url>
-      <url>img/img_fincas/oasis/img8.jpg</url>
-      <url>img/img_fincas/oasis/img9.jpg</url>
-      <url>img/img_fincas/oasis/img10.jpg</url>
-      <url>img/img_fincas/oasis/img11.jpg</url>
-      <url>img/img_fincas/oasis/img12.jpg</url>
-      <url>img/img_fincas/oasis/img13.jpg</url>
-      <url>img/img_fincas/oasis/img14.jpg</url>
-      <url>img/img_fincas/oasis/img15.jpg</url>
-      <url>img/img_fincas/oasis/img16.jpg</url>
-      <url>img/img_fincas/oasis/img17.jpg</url>
-    </imagenes>
-    <descripcion>Finca situada en las afueras...</descripcion>
-    <poblacion>Petra</poblacion>
-    <coordenadas>
-      <longitud>3.110729</longitud>
-      <latitud>39.64884</latitud>
-    </coordenadas>
-    <capacidad_personas>12</capacidad_personas>
-    <metros_casa>300</metros_casa>
-    <metros_terreno>2000</metros_terreno>
-    <num_habitaciones>8</num_habitaciones>
-    <num_banyos>8</num_banyos>
-    <servicios>
-      <piscina>Piscina</piscina>
-      <lavadora>Lavadora</lavadora>
-      <barbacoa>Barbacoa</barbacoa>
-      <cocina>
-        <tostadora>1</tostadora>
-        <horno>1</horno>
-        <nevera/>
-        <congelador/>
-      </cocina>
-    </servicios>
-    <hora>
-      <entrada>14:00</entrada>
-      <salida>10:00</salida>
-    </hora>
-    <calendario>
-      <registre>
-        <dia>28</dia>
-        <mes>12</mes>
-        <any>2016</any>
-        <ndias>4</ndias>
-      </registre>
-      <registre>
-        <dia>1</dia>
-        <mes>1</mes>
-        <any>2017</any>
-        <ndias>5</ndias>
-      </registre>
-      <registre>
-        <dia>17</dia>
-        <mes>1</mes>
-        <any>2017</any>
-        <ndias>5</ndias>
-      </registre>
-      <registre>
-        <dia>2</dia>
-        <mes>3</mes>
-        <any>2016</any>
-        <ndias>9</ndias>
-      </registre>
-    </calendario>
-    <precio>
-      <enero>80</enero>
-      <febrero>80</febrero>
-      <marzo>90</marzo>
-      <abril>90</abril>
-      <mayo>100</mayo>
-      <junio>100</junio>
-      <julio>150</julio>
-      <agosto>150</agosto>
-      <septiembre>100</septiembre>
-      <octubre>100</octubre>
-      <noviembre>80</noviembre>
-      <diciembre>80</diciembre>
-    </precio>
-    <comentarios>
-      <comentario>
-        <name>Noel</name>
-        <opinion>Una passada!</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
-      <comentario>
-        <name>Uou</name>
-        <opinion>dsada</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
-      <comentario>
-        <name>fsdadfsad</name>
-        <opinion>fdsfafsa</opinion>
-        <valoracion>1</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsfsa</name>
-        <opinion>fdsaf</opinion>
-        <valoracion>2</valoracion>
-      </comentario>
-      <comentario>
-        <name>fdsafaa</name>
-        <opinion>fsdafs</opinion>
-        <valoracion>5</valoracion>
-      </comentario>
-      <comentario>
-        <name>Sebastia</name>
-        <opinion>dsdasdasdas1111</opinion>
-        <valoracion>3</valoracion>
-      </comentario>
-    </comentarios>
-  </finca>
+
 </fincas>
