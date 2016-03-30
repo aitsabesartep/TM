@@ -302,6 +302,16 @@
                             img/icon/lavadora.svg
                         </xsl:attribute>
                     </xsl:when>
+                    <xsl:when test='$param="Climatizacion"'>
+                        <xsl:attribute name="src">
+                            img/icon/aire.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Limpieza"'>
+                        <xsl:attribute name="src">
+                            img/icon/clean.svg
+                        </xsl:attribute>
+                    </xsl:when>
                 </xsl:choose>
                 </img>
             </span><p id="carac">&#160;
