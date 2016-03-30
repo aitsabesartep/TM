@@ -193,9 +193,12 @@
                     <li><p>Nº Baños: <xsl:value-of select="num_banyos"/></p></li>
                     <li><p>Nº Habitaciones: <xsl:value-of select="num_habitaciones"/></p></li>
                     <li><p>Casa: <xsl:value-of select="metros_casa"/> m<sup>2</sup></p></li>
-                    <li><p><xsl:value-of select="servicios/*[1]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
-                    <li><p><xsl:value-of select="servicios/*[2]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
-                    <li><p><xsl:value-of select="servicios/*[3]"/>&#160;<span class="glyphicon glyphicon-ok"></span></p></li>
+                    <xsl:call-template name="caracter">
+                        <xsl:with-param name="param" select="servicios/*[1]"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="caracter">
+                        <xsl:with-param name="param" select="servicios/*[2]"/>
+                    </xsl:call-template>
                   </ul>
                 </div>
               </div>
@@ -211,5 +214,47 @@
       </div>
     </div>
   </xsl:template>
+
+  <xsl:template name="caracter">
+        <xsl:param name="param" />
+        <li>
+            <div id="carac"><span class="glyphicon"><img id="icon_carac">
+                <xsl:choose>
+                    <xsl:when test='$param="Internet"'>
+                        <xsl:attribute name="src">
+                            img/icon/wifi.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Piscina"'>
+                        <xsl:attribute name="src">
+                            img/icon/pool.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Barbacoa"'>
+                        <xsl:attribute name="src">
+                            img/icon/barbacoa.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="TV"'>
+                        <xsl:attribute name="src">
+                            img/icon/tv.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Sauna"'>
+                        <xsl:attribute name="src">
+                            img/icon/sauna.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test='$param="Lavadora"'>
+                        <xsl:attribute name="src">
+                            img/icon/lavadora.svg
+                        </xsl:attribute>
+                    </xsl:when>
+                </xsl:choose>
+                </img>
+            </span><p id="carac">&#160;
+            <xsl:value-of select="$param"/></p></div>
+        </li>
+    </xsl:template>
 
 </xsl:stylesheet>

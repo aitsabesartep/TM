@@ -101,7 +101,7 @@ function pintarCalendari(xml, codi){
         d = new Date(any, mes, dia)
         dies.push(d);
         var idx;
-        for (idx = 1; idx < cuants - 1; idx++) {
+        for (idx = 1; idx < cuants; idx++) {
             var d1 = null;
             d1 = new Date(d.getTime());
             var inc = d1.getDate();
@@ -287,4 +287,34 @@ function mitjaVal(xml, codi){
         showClear: false,
         showCaption: false
     });
-}             
+}      
+
+function reserva(){
+    var entrada = $('#entrada').val();
+    var sortida = $('#salida').val();
+    var date_entrada = moment(entrada, "DD/MM/YYYY").toDate();
+    var date_salida = moment(sortida, "DD/MM/YYYY").toDate();
+    var de = new Date(date_entrada);
+    var ds = new Date(date_salida);
+
+    var e = parseInt(de.getTime());
+    var s = parseInt(ds.getTime());
+    var timeDiff = Math.abs(s - e);
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    diffDays = diffDays + 1;
+    var mes = de.getMonth() + 1;
+
+    var dataString = 'd='+ de.getDate() + '&m=' + mes + '&a=' + de.getFullYear()+'&nd='+diffDays+'&codigo='+codi_finca;
+
+    $.ajax({
+        type: 'get',
+        url: 'php/saveday.php',
+        data: dataString,
+        success: function (response) {
+            //Quan hem escrit correctament es comentari
+            $("#pagament").html('<h3 class="gracias">Reserva realizada con &#233;xito</>');
+        }   
+    });
+    //Retornam null xq sa web no actualitzi
+    return false;
+}       

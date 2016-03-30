@@ -94,6 +94,7 @@ function actualitzarMenu(element){
     }else if (element == 0) {
         document.getElementById("index_m").className = "menu_active";
     }
+    $('.navbar-collapse').collapse('hide');
 }
 
 /*

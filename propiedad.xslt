@@ -201,17 +201,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-6 col-lg-offset-0">
                     <div id="pagament" class="hidden" style="margin-top: 25px; padding: 10px;">
-                            <form class="form-horizontal" role="form" action="php/saveday.php">
+                            <form class="form-horizontal"  method="GET" onsubmit="return reserva();">
                                 <div id="recuadre">
                                     <input type="hidden" name="codigo">
-                                    <xsl:attribute name="value"><xsl:value-of select="codi"/></xsl:attribute>
+                                        <xsl:attribute name="value"><xsl:value-of select="codi"/></xsl:attribute>
                                     </input>
-                                    <input id="i1" type="hidden" name="d"></input>
-                                    <input id="i2" type="hidden" name="m" value=""></input>
-                                    <input id="i3" type="hidden" name="a" value=""></input>
-                                    <input id="i4" type="hidden" name="nd" value=""></input>
-
-
                                     <h4 id="datos_reserva">Datos reserva</h4>
                                     <div class="form-group">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
