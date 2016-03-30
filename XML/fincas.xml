@@ -86,7 +86,6 @@
     <tipo>
       <finc>1</finc>
       <casa>1</casa>
-      <apartamento></apartamento>
     </tipo>
     <nombre>Casa del Mar</nombre>
     <imagenes>
@@ -134,22 +133,8 @@
       <internet>Internet</internet>
       <piscina>Piscina</piscina>
       <television>TV</television>
-      <lavadora></lavadora>
       <barbacoa>Barbacoa</barbacoa>
-      <cocina>
-        <tostadora></tostadora>
-        <horno></horno>
-        <lavavajillas></lavavajillas>
-        <cafetera></cafetera>
-        <microondas></microondas>
-        <nevera></nevera>
-        <congelador></congelador>
-      </cocina>
     </servicios>
-    <hora>
-      <entrada></entrada>
-      <salida></salida>
-    </hora>
     <calendario>
     </calendario>
     <precio>
